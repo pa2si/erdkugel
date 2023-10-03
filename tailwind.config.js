@@ -7,12 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        main: ['JosefinSans-regular', 'sans-serif'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'erdkugel-yellow': '#F6E84E',
+      },
     },
   },
   plugins: [],
-}
+};
