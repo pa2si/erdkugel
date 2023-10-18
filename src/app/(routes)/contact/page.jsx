@@ -1,6 +1,5 @@
 'use client';
 
-import styles from './page.module.css';
 import contacts from './data';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -11,12 +10,12 @@ const Page = () => {
   const handleMouseEnter = (id) => {
     setTimeout(() => {
       setHoveredContact(id);
-    }, 200);
+    }, 150);
   };
   const handleMouseLeave = () => {
     setTimeout(() => {
       setHoveredContact(null);
-    }, 200);
+    }, 150);
   };
 
   return (
@@ -67,6 +66,7 @@ const Page = () => {
                     sizes="100vw"
                     className="w-full h-80 relative overflow-hidden rounded-t- grayscale-effect"
                     style={{
+                      /*         filter: 'grayscale(20%)', */
                       objectFit: 'cover',
                       animation: `${
                         hoveredContact === id

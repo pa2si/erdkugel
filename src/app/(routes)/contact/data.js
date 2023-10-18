@@ -1,7 +1,7 @@
 const contacts = [
   {
     id: 1,
-    image1: '/images/erdkugel-gmbh-maps-screenshot.png',
+    image1: '/images/erdkugel-lab-leipzig.svg',
     image2: '/images/erdkugel-gmbh-maps-screenshot.png',
     figcaption: 'Maps Data: ©2023 GeoBasis-DE/BKG (©2009), Google',
     link: 'https://maps.app.goo.gl/sAgFdNQKP37CTSgN7',
@@ -12,7 +12,7 @@ const contacts = [
   },
   {
     id: 2,
-    image1: '/images/erdkugel-studios-berlin-entry.jpg',
+    image1: '/images/erdkugel studio eingang.jpg',
     image2: '/images/erdkugel-berlin-studios-maps-screenshot.png',
     figcaption: 'Maps Data: ©2023 GeoBasis-DE/BKG (©2009), Google',
     link: 'https://maps.app.goo.gl/8h9HZYDQFX9SsMp97',
