@@ -7,7 +7,7 @@ const page = () => {
         <h1>Impressum</h1>
         <div className="title__underline"></div>
       </div>
-      <div className={styles.impressum}>
+      <div className={` text-center ${styles.impressum}`}>
         <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
         <p>
           erdkugel GmbH
@@ -24,9 +24,8 @@ const page = () => {
         </p>
 
         <p>
-          <strong>Vertreten durch:</strong>
-          <br />
-          André Stiebe
+          <h5>Vertreten durch:</h5>
+          <p className="mt-1">André Stiebe</p>
         </p>
 
         <h3>Kontakt</h3>
