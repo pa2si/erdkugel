@@ -1,0 +1,17 @@
+.privacy {
+  font-family: JosefinSans-light;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  padding: 2rem 1rem 2rem 1rem;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(#ffffff);
+  overflow: scroll;
+}

@@ -1,10 +1,11 @@
-import Landing from '@/components/Landing/Landing';
-import Footer from '@/components/Footer/Footer';
+import Dashboard from '@/components/Dashboard/Dashboard';
 
 export default function Home() {
   return (
-    <main>
-      <Landing />
-    </main>
+    <>
+      <main>
+        <Dashboard />
+      </main>
+    </>
   );
 }

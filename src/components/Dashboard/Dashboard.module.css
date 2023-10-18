@@ -1,0 +1,82 @@
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo {
+  animation: FadeIn 2s ease-in-out forwards;
+  position: relative;
+  /*   background-color: green; */
+  height: 23rem;
+  width: 26rem;
+}
+
+@media screen and (min-width: 320px) {
+  .logo {
+    margin-top: 2.5rem;
+    height: 16rem;
+    width: 16rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .logo {
+    margin-top: 3rem;
+    height: 16rem;
+    width: 16rem;
+  }
+}
+@media screen and (min-width: 390px) {
+  .logo {
+    margin-top: 4rem;
+    height: 16rem;
+    width: 16rem;
+  }
+}
+@media screen and (min-width: 414px) {
+  .logo {
+    margin-top: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-top: 4rem;
+    height: 25rem;
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .logo {
+    margin-top: 2rem;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media screen and (min-height: 850px) {
+  .logo {
+    margin-top: 4rem;
+    height: 22rem;
+    width: 22rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-top: 2.5rem;
+    height: 25rem;
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .logo {
+    margin-top: 2.5rem;
+    height: 22rem;
+    width: 22rem;
+  }
+}

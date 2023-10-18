@@ -1,12 +1,30 @@
-const landingData = {
-  firma: 'erdkugel GmbH',
-  strasse: 'Ortelsdorfer Str. 41F',
-  plz: '09131 Chemnitz',
-  geschaeftsfuehrer: 'André Stiebe',
-  email: 'andre@erdkugel.net',
-  linkedInText: 'Follow Us',
-  impressum: 'Impressum',
-  datenschutz: 'Datenschtz',
+export const companyData = [
+  {
+    id: 1,
+    company: 'erdkugel lab leizig',
+    street: 'Engertstraße 13',
+    postal: '04177 Leipzig',
+  },
+  {
+    id: 2,
+    company: 'erdkugel studios berlin',
+    street: 'Erkelenzdamm 59/61 / Portal 2b',
+    postal: '10999 Berlin',
+  },
+];
+
+export const legalData = {
+  email: 'office@erdkugel.net',
+  imprint: 'Imprint',
+  privacyPolicy: 'Privacy Policy',
 };
 
-export default landingData;
+/* export const socialMedia = [
+  {
+    id: 1,
+    link: 'https://de.linkedin.com/company/erdkugel?trk=public_profile_topcard-current-company',
+    icon: '/logos/In-White-21.png',
+    alt: 'LinkedIn Logo',
+  },
+];
+ */
