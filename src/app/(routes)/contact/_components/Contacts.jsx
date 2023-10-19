@@ -62,7 +62,6 @@ const Contacts = () => {
                   sizes="100vw"
                   className="w-full h-80 relative overflow-hidden rounded-t- grayscale-effect"
                   style={{
-                    /*         filter: 'grayscale(20%)', */
                     objectFit: 'cover',
                     animation: `${
                       hoveredContact === id

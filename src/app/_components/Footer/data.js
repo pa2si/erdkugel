@@ -20,13 +20,3 @@ export const legalData = {
   imprint: 'Imprint',
   privacyPolicy: 'Privacy Policy',
 };
-
-/* export const socialMedia = [
-  {
-    id: 1,
-    link: 'https://de.linkedin.com/company/erdkugel?trk=public_profile_topcard-current-company',
-    icon: '/logos/In-White-21.png',
-    alt: 'LinkedIn Logo',
-  },
-];
- */

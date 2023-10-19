@@ -101,7 +101,7 @@ body {
       rgba(62, 81, 81, 0.4),
       rgba(222, 203, 164, 0.4)
     ),
-    url('/images/erdkugel-background-ohne-logo-mit-bg.png');
+    url('/images/erdkugel-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

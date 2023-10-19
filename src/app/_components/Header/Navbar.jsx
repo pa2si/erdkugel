@@ -59,7 +59,7 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 href={'/'}
-                src="/logos/erdkugel-logo-weiss-text.webp"
+                src="/logos/erdkugel-logo-white-w-text.webp"
                 alt="logo"
                 priority={true}
                 width="0"
