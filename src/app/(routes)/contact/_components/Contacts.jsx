@@ -72,22 +72,25 @@ const Contacts = () => {
                 />
               </a>
 
-              <div className="mt-1">
-                <p className="text-gray-500 text-sm">{figcaption}</p>
-                <div className="mt-2">
-                  <h2 className="text-xxl ">{company}</h2>
-                  <p className="text-xl text-gray-600">{street}</p>
-                  <p className="text-xl text-gray-600">{postal}</p>
-                  <p className="text-xl text-gray-600">
-                    Email:{' '}
-                    <a
-                      href={`mailto:${email}`}
-                      className="text-blue-500 hover:underline"
-                    >
-                      {email}
-                    </a>
-                  </p>
+              {hoveredContact === id && (
+                <div className="mt-1">
+                  <p className="text-gray-500 text-sm">{figcaption}</p>
                 </div>
+              )}
+
+              <div className="mt-3 ">
+                <h2 className="text-xxl">{company}</h2>
+                <p className=" font-normal text-xl text-gray-800">{street}</p>
+                <p className="text-xl text-gray-800">{postal}</p>
+                <p className="text-xl text-gray-800">
+                  Email:{' '}
+                  <a
+                    href={`mailto:${email}`}
+                    className="text-blue-500 hover:underline"
+                  >
+                    {email}
+                  </a>
+                </p>
               </div>
             </address>
           );
