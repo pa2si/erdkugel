@@ -1,5 +1,4 @@
 import './globals.css';
-/* import { AppProvider } from '@/utils/Context'; */
 import Footer from '@/app/_components/Footer/Footer';
 import Header from '@/app/_components/Header/Header';
 
@@ -32,11 +31,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/*    <AppProvider> */}
         <Header />
         {children}
         <Footer />
-        {/*       </AppProvider> */}
       </body>
     </html>
   );
