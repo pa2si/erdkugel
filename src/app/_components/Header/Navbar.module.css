@@ -27,14 +27,14 @@
 }
 .nav__toggle {
   font-size: 1.5rem;
-  color: rgb(71 85 105);
+  color: rgb(234 179 8);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav__toggle:hover {
-  color: rgb(100 116 139);
+  color: rgb(246, 232, 78);
   transform: rotate(90deg);
 }
 
