@@ -13,7 +13,7 @@ const page = () => {
         <div className="title__underline"></div>
       </section>
       <article>
-        <address className={styles.privacy}>
+        <address className={` text-center ${styles.privacy}`}>
           <h3>1. Datenschutz auf einen Blick</h3>
           <h5>Allgemeine Hinweise</h5>{' '}
           <p>
