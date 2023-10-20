@@ -20,7 +20,7 @@ const Contacts = () => {
 
   return (
     <section className="flex justify-center items-center py-7">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 w-full max-w-6xl">
+      <div className="grid grid-cols-1 mx-0 sm:mx-4 md:grid-cols-2 gap-7 w-full max-w-6xl">
         {contacts.map((contact) => {
           const {
             id,
