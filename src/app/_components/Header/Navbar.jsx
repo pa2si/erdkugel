@@ -96,6 +96,7 @@ const Navbar = () => {
                   <Link
                     className={pathname === url ? '!text-yellow-300 ' : ''}
                     href={url}
+                    onClick={toggleLinks}
                   >
                     {text}
                   </Link>
