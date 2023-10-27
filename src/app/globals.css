@@ -20,6 +20,12 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: JosefinSans-semi-bold;
+  src: url('/fonts/Josefin_Sans/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 
 /* ============= GLOBAL CSS =============== */
 
@@ -99,9 +105,9 @@ body {
   background: linear-gradient(
       to top,
       rgba(62, 81, 81, 0.4),
-      rgba(222, 203, 164, 0.4)
+      rgba(146, 127, 94, 0.4)
     ),
-    url('/images/erdkugel-background.png');
+    url('/images/erdkugel-background_2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

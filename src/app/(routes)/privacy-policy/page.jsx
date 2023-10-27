@@ -25,6 +25,17 @@ const page = () => {
             unserer unter diesem Text aufgef&uuml;hrten
             Datenschutzerkl&auml;rung.
           </p>
+          <h4>Lizenzierung der verwendeten Schriftart</h4>
+          <p>
+            In diesem Projekt verwenden wir eine urheberrechtlich geschützte
+            Schriftart, die unter der SIL Open Font License, Version 1.1,
+            lizenziert ist. Die Schriftart wurde von Santiago Orozco erstellt.
+            Diese Lizenz erlaubt es uns, die Schriftart unter bestimmten
+            Bedingungen zu verwenden, zu modifizieren und weiterzugeben, wie zum
+            Beispiel das Verbot, die Schriftart einzeln zu verkaufen, sowie die
+            Pflicht, den Urheberrechtsvermerk und die Lizenz bei der Verteilung
+            oder Bündelung mit unserem Projekt beizufügen.
+          </p>
           <h4>Datenerfassung auf dieser Website</h4>{' '}
           <h5>
             Wer ist verantwortlich f&uuml;r die Datenerfassung auf dieser
