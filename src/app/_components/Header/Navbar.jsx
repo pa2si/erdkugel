@@ -65,7 +65,7 @@ const Navbar = () => {
                 width="0"
                 height="0"
                 sizes="100vw"
-                style={{ width: '150px', height: 'auto' }}
+                style={{ width: '110px', height: 'auto' }}
                 className={`mt-0 sm:mt-1 ml-1 sm:ml-2 md:ml-4 ${
                   ShowLogo ? '' : styles.hiddenLogo
                 }`}

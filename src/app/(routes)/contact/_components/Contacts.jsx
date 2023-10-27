@@ -79,7 +79,7 @@ const Contacts = () => {
               )}
 
               <div className="mt-3 ">
-                <h2 className="text-xxl">{company}</h2>
+                <p className="text-2xl text-gray-800">{company}</p>
                 <p className=" font-normal text-xl text-gray-800">{street}</p>
                 <p className="text-xl text-gray-800">{postal}</p>
                 <p className="text-xl text-gray-800">
