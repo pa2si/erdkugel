@@ -1,6 +1,7 @@
 import './globals.css';
 import Footer from '@/app/_components/Footer/Footer';
-import Header from '@/app/_components/Header/Header';
+
+import { AppProvider } from '@/utils/context';
 
 export const metadata = {
   title: {
@@ -31,9 +32,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <AppProvider>
+          {children}
+          <Footer />
+        </AppProvider>
       </body>
     </html>
   );

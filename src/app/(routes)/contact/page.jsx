@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <main className="pt-3 sm:h-screen">
       <section className="pt-16 text-center ">
-        <h1>Contact</h1>
+        <h1>contact</h1>
         <div className="title__underline"></div>
       </section>
       <Contacts />

@@ -7,10 +7,10 @@ const DialogueHeading = () => {
   const textYValue = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    [0, -200, -600 * 2]
+    [0, -1300, -1600 * 2]
   );
 
-  const scaleBigger = useTransform(scrollYProgress, [0, 0.6, 1], [0.2, 1, 1]);
+  const scaleBigger = useTransform(scrollYProgress, [0, 0.4, 1], [0.2, 1, 1]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.3, 1, 0.6]);
 
   return (
