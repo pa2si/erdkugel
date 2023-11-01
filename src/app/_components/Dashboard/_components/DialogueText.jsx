@@ -13,7 +13,7 @@ const DialogueText = () => {
   return (
     <motion.h3
       className="text-center w-3/4 mx-auto text-4xl leading-normal"
-      style={{ y: textYValue, scale: scaleBigger, opacity: textOpacity }}
+      style={{ /* y: textYValue, */ scale: scaleBigger, opacity: textOpacity }}
     >
       We are the <span className="text-white">storytellers</span> behind the
       scenes, <span className="text-yellow-300">sculpting</span> voices and

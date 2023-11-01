@@ -4,7 +4,6 @@ import { motion, useTransform, useScroll } from 'framer-motion';
 import Image from 'next/image';
 import DialogueHeading from './DialogueHeading';
 import { useRef } from 'react';
-import { useScrollBlurEffect } from '@/utils/slowFadeInAnimationScrolling';
 
 const HeadingTwo = () => {
   const ref = useRef(null);
@@ -14,14 +13,12 @@ const HeadingTwo = () => {
     offset: ['start end', 'end start'],
   });
 
-  const textYValue = useTransform(scrollYProgress, [0, 1], ['-100', '-3500%']);
+  const textYValue = useTransform(scrollYProgress, [0, 1], ['0', '-6000%']);
   const imageYValue = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
     ['0%', '-100%', '-350%']
   );
-
-  const blurEffect = useScrollBlurEffect();
 
   return (
     <motion.div
@@ -46,14 +43,13 @@ const HeadingTwo = () => {
           width: '100%',
           height: '50%',
           opacity: '0.6',
-          filter: `blur(${blurEffect}px)`,
         }}
         className=""
       />
       <div className="flex justify-center">
         <motion.h2
           ref={ref}
-          className="absolute text-center sm:text-7xl   text-white  shadow-md shadow-white"
+          className="absolute text-center full sm:text-7xl   text-white  shadow-md shadow-white"
           style={{ y: textYValue }}
         >
           <span className="text-white">what does erdkugel do?</span>

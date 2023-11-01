@@ -15,7 +15,7 @@ const StudioWebsiteLiink = () => {
   return (
     <motion.div
       className=""
-      style={{ y: textYValue, scale: scaleBigger, opacity: textOpacity }}
+      style={{ /* y: textYValue, */ scale: scaleBigger, opacity: textOpacity }}
     >
       <p className="w-1/2 text-center mx-auto text-4x text-5xl mb-5 leading-tight ">
         <span className="text-white">click</span> here to enter our Studio

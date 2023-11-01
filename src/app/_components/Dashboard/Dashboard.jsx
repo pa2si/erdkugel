@@ -45,7 +45,7 @@ const Homepage = () => {
 
   return (
     <main>
-      {/* <h1 className="hidden">Welcome to Erdkugel</h1> */}
+      {/*       <h1 className="hidden">Welcome to Erdkugel</h1> */}
       <section
         style={
           {
@@ -116,8 +116,7 @@ const Homepage = () => {
 
       {/*    <HeadingOne /> */}
       <HeadingTwo />
-      <DialogueHeading />
-      <Plugins />
+      {/*    <Plugins /> */}
       <DialogueText />
       <StudioWebsiteLiink />
     </main>
