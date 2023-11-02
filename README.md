@@ -1,8 +1,20 @@
 what's done:
 
-- first submit
-- backround logo
-- footer for layout.js
+- homepage
+- contact route
+- imprint route
+- privacy route
+- diferent header for homepage and routes
+- footer for main layout.js
+- HP section one
+- HP section two
+  - Plugins with animated text
+
+to do:
+
+- find reason why there is so much space after section two
+- next section shall be dialogue text as a teaser
+- section afterwords shall be the studio and lab presentaion
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

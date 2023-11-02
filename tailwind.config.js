@@ -18,6 +18,7 @@ module.exports = {
       colors: {
         'erdkugel-yellow': '#F6E84E',
         linkedin: '#0077B5',
+        'erdkugel-text': '#404040',
       },
     },
   },

@@ -15,15 +15,21 @@
   font-style: normal;
 }
 @font-face {
+  font-family: JosefinSans-semi-bold;
+  src: url('/fonts/Josefin_Sans/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
   font-family: JosefinSans-bold;
   src: url('/fonts/Josefin_Sans/JosefinSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: JosefinSans-semi-bold;
-  src: url('/fonts/Josefin_Sans/JosefinSans-SemiBold.ttf') format('truetype');
-  font-weight: 500;
+  font-family: JosefinSans-lightItalic;
+  src: url('/fonts/Josefin_Sans/JosefinSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 

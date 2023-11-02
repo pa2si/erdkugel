@@ -11,6 +11,7 @@ import {
 import { useEffect, useRef } from 'react';
 import { useScrollBlurEffect } from '@/utils/slowFadeInAnimationScrolling';
 import Plugins from './Plugins';
+import AnimatedText from '@/utils/AnimatedText';
 
 const SectionTwo = () => {
   const ref = useRef(null);
@@ -20,7 +21,7 @@ const SectionTwo = () => {
   const blurEffect = useScrollBlurEffect(0.5, 0.6, 5);
   const { scrollYProgress } = useScroll();
 
-  const textYValue = useTransform(scrollYProgress, [0, 1], ['-80%', '80%']);
+  const textYValue = useTransform(scrollYProgress, [0, 1], ['-60%', '20%']);
 
   useEffect(() => {
     if (isInView) {
@@ -54,7 +55,7 @@ const SectionTwo = () => {
 
       <div className="flex justify-center">
         <motion.h2
-          style={{ y: textYValue }}
+          style={{ y: textYValue, letterSpacing: '1px' }}
           ref={ref}
           variants={{
             hidden: { opacity: 0, x: -300 },
@@ -65,22 +66,43 @@ const SectionTwo = () => {
           transition={{
             duration: 1,
           }}
-          className="absolute text-center w-3/4 sm:text-5xl sm:leading-tight top-1/3  bg-white bg-opacity-30 p-10 rounded-2xl "
+          className="absolute text-center text-erdkugel-text w-3/4 sm:text-[2.6rem] sm:leading-tight top-1/3 bg-slate-100 bg-opacity-60 p-10 rounded-2xl leading-10 shadow-xl shadow-black"
         >
-          <p>
-            <span className="text-white">erdkugel </span>
+          <p className="pb-2">
+            <Image
+              src="/logos/erdkugel-logo-text.webp"
+              alt="erdkugel text logo"
+              width="150"
+              height="150"
+              sizes="16vw"
+              className="inline mr-4"
+              style={{ width: 'auto', height: 'auto' }}
+            />
+            {/* <span className="text-white">erdkugel </span> */}
             stands for
           </p>
+          <div>
+            <div
+              className="pb-2 text-stone-700 "
+              style={{
+                fontFamily: 'JosefinSans-lightItalic',
+              }}
+            >
+              <AnimatedText text="SOUND POST PRODUCTION" />
+            </div>
 
-          <p>
-            <span className="text-yellow-300 "> SOUND POST PRODUCTION </span>
-          </p>
-          <p>and</p>
-          <p>
-            <span className="text-orange-900"> DIALOGUE EDITING </span>
-            <span className="text-white"> wizardry</span>
-          </p>
-          <Plugins className="absolute " />
+            <Plugins className="absolute " />
+          </div>
+
+          <p className="pt-2 pb-2">and</p>
+          <div
+            className="pb-2 text-stone-700 "
+            style={{
+              fontFamily: 'JosefinSans-lightItalic',
+            }}
+          >
+            <AnimatedText text="DIALOGUE EDITING wizardry" />
+          </div>
         </motion.h2>
       </div>
     </article>
