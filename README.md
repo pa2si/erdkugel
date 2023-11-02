@@ -12,6 +12,7 @@ what's done:
 
 to do:
 
+- make hidden und visible effect for the y moving of sectionTwo (not due to scrolling)
 - find reason why there is so much space after section two
 - next section shall be dialogue text as a teaser
 - section afterwords shall be the studio and lab presentaion

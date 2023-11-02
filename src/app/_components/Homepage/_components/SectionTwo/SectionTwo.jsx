@@ -55,7 +55,15 @@ const SectionTwo = () => {
 
       <div className="flex justify-center">
         <motion.h2
-          style={{ y: textYValue, letterSpacing: '1px' }}
+          style={{
+            y: textYValue,
+            letterSpacing: '1px',
+            background:
+              'linear-gradient(to bottom, rgba(241, 245, 249,0.9), rgba(241, 245, 249,0.9)), url(/images/richard-horvath-WOA3QKFjlo8-unsplash.jpg)',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }}
           ref={ref}
           variants={{
             hidden: { opacity: 0, x: -300 },
@@ -66,7 +74,7 @@ const SectionTwo = () => {
           transition={{
             duration: 1,
           }}
-          className="absolute text-center text-erdkugel-text w-3/4 sm:text-[2.6rem] sm:leading-tight top-1/3 bg-slate-100 bg-opacity-60 p-10 rounded-2xl leading-10 shadow-xl shadow-black"
+          className="absolute text-center text-erdkugel-text w-3/4 sm:text-[2.6rem] sm:leading-tight top-1/3 p-10 rounded-2xl leading-10 shadow-xl shadow-black"
         >
           <p className="pb-2">
             <Image
