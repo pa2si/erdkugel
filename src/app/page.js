@@ -1,11 +1,11 @@
 import Header from './_components/Header/Header';
-import Dashboard from '@/app/_components/Dashboard/Dashboard';
+import Homepage from '@/app/_components/Homepage/Homepage';
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Dashboard />
+      <Homepage />
     </>
   );
 }

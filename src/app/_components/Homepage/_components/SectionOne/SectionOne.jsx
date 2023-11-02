@@ -2,11 +2,11 @@
 
 import { motion, useTransform, useScroll } from 'framer-motion';
 import Image from 'next/image';
-import DialogueHeading from './DialogueHeading';
 import { useRef } from 'react';
 import { useScrollBlurEffect } from '@/utils/slowFadeInAnimationScrolling';
+import SectionTwo from '@/app/_components/Homepage/_components/SectionTwo/SectionTwo';
 
-const HeadingTwo = () => {
+const SectionOne = () => {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -59,8 +59,8 @@ const HeadingTwo = () => {
           <span className="text-white">what does erdkugel do?</span>
         </motion.h2>{' '}
       </div>
-      <DialogueHeading />
+      <SectionTwo />
     </motion.div>
   );
 };
-export default HeadingTwo;
+export default SectionOne;

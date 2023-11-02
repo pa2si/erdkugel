@@ -34,24 +34,24 @@ export const useFramerOpacityEffect = (windowWidth) => {
   return useTransform(scrollYProgress, start, end);
 };
 
-export const useScrollBlurEffect = () => {
-  const { scrollY } = useScroll(); // use scrollY instead of scrollYProgress for more control
-
+export const useScrollBlurEffect = (
+  startPoint = 0.2,
+  endPoint = 0.8,
+  maxBlur = 5
+) => {
+  const { scrollY } = useScroll();
   const [blur, setBlur] = useState(0);
-  const startPoint = 0.2; // The point in the scroll where blur starts (20% of the page height)
-  const endPoint = 0.8; // The point where blur reaches its maximum (50% of the page height)
-  const maxBlur = 5; // Maximum blur value
 
   useEffect(() => {
-    return scrollY.onChange((latest) => {
-      const scrollY = latest;
+    const unsubscribe = scrollY.on('change', (latest) => {
       const windowHeight = window.innerHeight;
-      // Calculate the scroll position relative to the start and end points
-      const relativeY = Math.max(0, scrollY - startPoint * windowHeight);
+      const relativeY = Math.max(0, latest - startPoint * windowHeight);
       const blurValue =
         (relativeY / ((endPoint - startPoint) * windowHeight)) * maxBlur;
       setBlur(Math.min(maxBlur, blurValue));
     });
+
+    return () => unsubscribe();
   }, [scrollY, startPoint, endPoint, maxBlur]);
 
   return blur;
