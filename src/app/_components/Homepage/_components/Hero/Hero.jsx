@@ -6,6 +6,7 @@ import { useGlobalContext } from '@/utils/context';
 import { usePathname } from 'next/navigation';
 import { useRef, useEffect } from 'react';
 import { motion, useTransform, useInView, useScroll } from 'framer-motion';
+import AnimatedText from '@/utils/AnimatedText';
 
 const Hero = () => {
   const logoRef = useRef(null);

@@ -54,11 +54,12 @@ const SectionOne = () => {
     <motion.div
       ref={ref}
       style={{
-        background:
-          'linear-gradient(to left, rgba(93, 65, 87, 0.6), rgba(168, 202, 186, 0.6))',
+        backgroundImage: 'url(/images/troy-t-dX76Mts-LVM-unsplash.webp)',
+        backgroundPosition: 'center center',
+        backgroundSize: '100%',
+        backgroundAttachment: 'fixed',
 
-        y: imageYValue,
-        height: '200vh',
+        height: '100vh',
       }}
       className="relative"
     >
@@ -68,32 +69,18 @@ const SectionOne = () => {
         animate={controls}
         variants={variants}
         transition={{ type: 'spring', stiffness: 100 }}
-        className="h-screen"
+        className="h-1/2 w-full"
       >
         {/* Background Image */}
-        <Image
-          src="/images/troy-t-dX76Mts-LVM-unsplash.webp"
-          alt="studio erdkugel"
-          width="0"
-          height="0"
-          sizes="100vw"
-          style={{
-            objectFit: 'cover',
-            width: '100%',
-            height: '100%',
-            opacity: '0.7',
-            filter: `blur(${blurEffect}px)`,
-          }}
-        />
       </motion.div>
-      <div className="flex justify-center">
-        <motion.h2
+      <div className="flex justify-center h-1/2 w-full bg-white">
+        {/*    <motion.h2
           ref={ref}
           className="absolute text-center sm:text-7xl   text-white  shadow-md shadow-white"
           style={{ y: textYValue }}
         >
           <span className="text-white">what does erdkugel do?</span>
-        </motion.h2>{' '}
+        </motion.h2>{' '} */}
       </div>
       <SectionTwo />
     </motion.div>

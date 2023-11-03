@@ -12,10 +12,15 @@ what's done:
 
 to do:
 
+Klangee imitieren!
+
+seperate the Refs for two cases. one the background div for the blur and the other for the y and x effect
+
 - make hidden und visible effect for the y moving of sectionTwo (not due to scrolling)
 - find reason why there is so much space after section two
 - next section shall be dialogue text as a teaser
 - section afterwords shall be the studio and lab presentaion
+- click on plugin icons to open info
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

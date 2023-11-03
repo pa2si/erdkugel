@@ -7,14 +7,6 @@ import { pluginImages } from './data';
 const Plugins = () => {
   const { scrollYProgress } = useScroll();
 
-  const scaleBigger = useTransform(
-    scrollYProgress,
-    [0, 0.2, 0.9],
-    ['50%', '100%', '80%']
-  );
-
-  const textOpacity = useTransform(scrollYProgress, [0, 0.3, 1], [0.3, 1, 1]);
-
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
@@ -24,15 +16,14 @@ const Plugins = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.15 * id,
+        delay: 0.2 * id,
       },
     }),
   };
 
   return (
     <motion.ul
-      className="sm:grid sm:grid-cols-3 w-3/4 gap-5 sm:justify-center mx-auto "
-      style={{ scale: scaleBigger, opacity: textOpacity }}
+      className=" grid grid-cols-3 w-full gap-5 sm:justify-center mx-0 sm:mx-auto "
       transition={{
         duration: 1,
         type: 'spring',
@@ -46,7 +37,7 @@ const Plugins = () => {
         return (
           <motion.li
             key={id}
-            className={` w-full h-auto rounded-log`}
+            className=" max-w-sm h-auto rounded-log"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -58,13 +49,12 @@ const Plugins = () => {
               alt={alt}
               width="0"
               height="0"
+              priority={true}
               sizes="100vw"
+              className="rounded-full border-2 border-yellow-300 shadow-md shadow-black w-20 sm:w-full sm:h-full"
               style={{
                 objectFit: 'cover',
-                width: '100%',
-                height: '100%',
               }}
-              className="rounded-full border-2 border-yellow-300 shadow-md shadow-black"
             />
           </motion.li>
         );

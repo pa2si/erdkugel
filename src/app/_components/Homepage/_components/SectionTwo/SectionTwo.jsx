@@ -21,8 +21,6 @@ const SectionTwo = () => {
   const blurEffect = useScrollBlurEffect(0.5, 0.6, 5);
   const { scrollYProgress } = useScroll();
 
-  const textYValue = useTransform(scrollYProgress, [0, 1], ['-60%', '20%']);
-
   useEffect(() => {
     if (isInView) {
       mainControls.start('visible');
@@ -30,19 +28,15 @@ const SectionTwo = () => {
   }, [isInView, mainControls]);
 
   return (
-    <article
-      className="  h-screen w-full relative overflow-hidden "
-      style={{
-        background:
-          'linear-gradient(to left, rgba(250, 250, 250, 0.4), rgba(250, 250, 250, 0.4))',
-      }}
-    >
+    <article className="relative h-screen inset-0 w-full flex justify-center ">
+      {/* Background h-screen */}
       <Image
         src="/images/jonas-zurcher-fvLNFnnLPIk-unsplash.jpg"
         alt="studio erdkugel"
         width="0"
         height="0"
         sizes="100vw"
+        className="shadow-inner"
         style={{
           objectFit: 'cover',
           width: '100%',
@@ -50,32 +44,30 @@ const SectionTwo = () => {
           opacity: '0.6',
           filter: `blur(${blurEffect}px)`,
         }}
-        className="shadow-inner"
       />
+      {/* inner Info field in sectionTwo */}
 
-      <div className="flex justify-center">
-        <motion.h2
-          style={{
-            y: textYValue,
-            letterSpacing: '1px',
-            background:
-              'linear-gradient(to bottom, rgba(241, 245, 249,0.9), rgba(241, 245, 249,0.9)), url(/images/richard-horvath-WOA3QKFjlo8-unsplash.jpg)',
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-          }}
-          ref={ref}
-          variants={{
-            hidden: { opacity: 0, x: -300 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{
-            duration: 1,
-          }}
-          className="absolute text-center text-erdkugel-text w-3/4 sm:text-[2.6rem] sm:leading-tight top-1/3 p-10 rounded-2xl leading-10 shadow-xl shadow-black"
-        >
+      <motion.div
+        className="absolute my-auto grid grid-rows-3 justify-center items-center text-center tracking-[1px] text-erdkugel-text w-11/12 h-3/4 sm:w-3/5 sm:h-5/6  sm:leading-tight top-0 bottom-0 rounded-2xl px-0 sm:px-4 leading-10 shadow-xl shadow-black"
+        style={{
+          background:
+            'linear-gradient(to bottom, rgba(241, 245, 249,0.9), rgba(241, 245, 249,0.9)), url(/images/richard-horvath-WOA3QKFjlo8-unsplash.jpg)',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, x: -300, y: -400 },
+          visible: { opacity: 1, x: 0, y: 0 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{
+          duration: 1,
+        }}
+      >
+        <h2 className="text-base sm:text-4xl w-full">
           <p className="pb-2">
             <Image
               src="/logos/erdkugel-logo-text.webp"
@@ -83,8 +75,7 @@ const SectionTwo = () => {
               width="150"
               height="150"
               sizes="16vw"
-              className="inline mr-4"
-              style={{ width: 'auto', height: 'auto' }}
+              className="inline mr-4 w-20 sm:w-2/6  h-full"
             />
             {/* <span className="text-white">erdkugel </span> */}
             stands for
@@ -98,10 +89,10 @@ const SectionTwo = () => {
             >
               <AnimatedText text="SOUND POST PRODUCTION" />
             </div>
-
-            <Plugins className="absolute " />
           </div>
-
+        </h2>
+        <Plugins className="absolute" />
+        <h2 className=" text-base sm:text-4xl ">
           <p className="pt-2 pb-2">and</p>
           <div
             className="pb-2 text-stone-700 "
@@ -109,10 +100,10 @@ const SectionTwo = () => {
               fontFamily: 'JosefinSans-lightItalic',
             }}
           >
-            <AnimatedText text="DIALOGUE EDITING wizardry" />
+            <AnimatedText text="DIALOGUE EDITING wizardry" startDelay={0} />
           </div>
-        </motion.h2>
-      </div>
+        </h2>
+      </motion.div>
     </article>
   );
 };
