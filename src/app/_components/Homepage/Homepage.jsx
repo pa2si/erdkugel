@@ -8,9 +8,9 @@ const Homepage = () => {
     <main>
       <h1 className="sr-only">Welcome to Erdkugel</h1>
       <Hero />
-      <About />
+      {/*   <StudioBerlin />
       <CatchPhrase />
-      <StudioBerlin />
+      <About /> */}
     </main>
   );
 };

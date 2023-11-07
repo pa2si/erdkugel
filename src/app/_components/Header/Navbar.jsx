@@ -40,16 +40,16 @@ const Navbar = () => {
     // Create an observer
     const observer = new IntersectionObserver(handleHeroInView, options);
     // Target element to watch
-    const hero = document.getElementById('hero');
+    const transNav = document.getElementById('transNav');
 
-    if (hero) {
-      observer.observe(hero);
+    if (transNav) {
+      observer.observe(transNav);
     }
 
     // Clean up the observer on unmount
     return () => {
-      if (hero) {
-        observer.unobserve(hero);
+      if (transNav) {
+        observer.unobserve(transNav);
       }
     };
   }, []);
@@ -100,7 +100,7 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 href={'/'}
-                src="/logos/erdkugel-logo-white-w-text.webp"
+                src="/logos/erdkugel-logo-text.webp"
                 alt="logo"
                 priority={true}
                 width="0"

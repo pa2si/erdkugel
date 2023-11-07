@@ -9,9 +9,14 @@
   border-bottom: 1px solid var(--border-color);
 }
 .navbar.NavBg {
-  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(
+    to right,
+    rgba(194, 194, 181, 0.95),
+    rgba(36, 41, 41, 0.95)
+  );
   box-shadow: var(--shadow-3);
   border-bottom: 1px solid var(--border-color);
+  padding: 0.7rem;
 }
 .navbar.hidden {
   transform: translateY(-100%);

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { links, social } from './data';
 import Image from 'next/image';
@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import styles from './Navbar.module.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
 import { useGlobalContext } from '@/utils/context';
 
 const Navbar = () => {
@@ -17,13 +18,54 @@ const Navbar = () => {
   const linksRef = useRef(null);
   const { useScroll, useMotionValueEvent } = require('framer-motion');
   const { scrollY } = useScroll();
+
   const pathname = usePathname();
 
-  const { isLogoInView } = useGlobalContext();
+  const [isHeroInView, setIsHeroInView] = useState(true);
 
-  const transparentNavBg = pathname === '/';
+  useEffect(() => {
+    // Function to be called whenever the target meets a threshold of visibility
+    const handleHeroInView = (entries, observer) => {
+      entries.forEach((entry) => {
+        // If the hero element is in view
+        setIsHeroInView(entry.isIntersecting);
+      });
+    };
 
-  const shouldHideLogo = pathname === '/' && isLogoInView;
+    // Options for the intersection observer
+    const options = {
+      root: null, // relative to document viewport
+      rootMargin: '0px', // margin around root. Values are similar to css property. Unitless values not allowed
+      threshold: 0.5, // visible amount of item shown in relation to root
+    };
+
+    // Create an observer
+    const observer = new IntersectionObserver(handleHeroInView, options);
+    // Target element to watch
+    const transNav = document.getElementById('transNav');
+
+    if (transNav) {
+      observer.observe(transNav);
+    }
+
+    // Clean up the observer on unmount
+    return () => {
+      if (transNav) {
+        observer.unobserve(transNav);
+      }
+    };
+  }, [pathname]);
+
+  const transparentNavBg = isHeroInView;
+  const shouldHideLogo = isHeroInView;
+
+  const navbarClassNames = [
+    styles.navbar,
+    hidden && styles.hidden,
+    transparentNavBg ? '' : styles.NavBg,
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
@@ -46,9 +88,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`${styles.navbar} ${
-        transparentNavBg ? styles.transparentNavBg : ''
-      }`}
+      className={navbarClassNames}
       variants={{
         visible: { y: 0 },
         hidden: { y: '-100%' },
@@ -62,13 +102,18 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 href={'/'}
-                src="/logos/erdkugel-logo-white-w-text.webp"
+                src="/logos/erdkugel-logo-text.webp"
                 alt="logo"
                 priority={true}
                 width="0"
                 height="0"
                 sizes="100vw"
-                style={{ width: '110px', height: 'auto' }}
+                style={{
+                  width: '110px',
+                  height: 'auto',
+                  opacity: isHeroInView ? 0 : 1,
+                  transition: 'opacity 0.3s ease',
+                }}
                 className={`mt-0 sm:mt-1 ml-1 sm:ml-2 md:ml-4 ${
                   shouldHideLogo ? styles.hiddenLogo : ''
                 }`}

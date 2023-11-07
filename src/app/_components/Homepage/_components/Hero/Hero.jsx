@@ -4,10 +4,10 @@ import Image from 'next/image';
 import styles from './Hero.module.css';
 import { useRef, useEffect } from 'react';
 import { motion, useTransform, useInView, useScroll } from 'framer-motion';
-import AnimatedText from '@/utils/AnimatedText';
-import CarouselText from './CarouselText';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import CarouselText from './CarouselText';
+import AnimatedText from '@/utils/AnimatedText';
 import ParallaxText from '@/utils/ParallaxText';
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <section
       className={`flex flex-col items-center h-screen relative ${styles.backgroundOpacity} `}
-      id="hero"
+      id="transNav"
     >
       <motion.div
         ref={logoRef}
@@ -97,10 +97,10 @@ const Hero = () => {
         }}
       >
         {/*     <CarouselText /> */}
-        <ParallaxText
+        {/*       <ParallaxText
           text="movie sound post production + dialogue editing + cinema sound mixing + cinema mixing studio building + "
           baseVelocity={1}
-        />
+        /> */}
       </motion.div>
     </section>
   );

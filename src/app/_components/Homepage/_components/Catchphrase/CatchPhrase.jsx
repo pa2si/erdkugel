@@ -5,9 +5,7 @@ import Image from 'next/image';
 import styles from './CatchPhrase.module.css';
 
 import { useState, useEffect } from 'react';
-
 import { useScrollBlurEffect } from '@/utils/slowFadeInAnimationScrolling';
-import SectionTwo from '@/app/_components/Homepage/_components/SectionTwo/SectionTwo';
 
 const CatchPhrase = () => {
   const blurEffect = useScrollBlurEffect();

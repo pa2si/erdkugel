@@ -30,7 +30,11 @@ const TitleHOne = ({ text }) => {
         duration: 1,
       }}
     >
-      <h1 className=" flex items-center text-erdkugel-text text-5xl " ref={ref}>
+      <h1
+        className=" flex items-center text-erdkugel-text text-5xl "
+        ref={ref}
+        id="hero"
+      >
         {pathname === '/' && (
           <Image
             src="/logos/erdkugel-logo-text.webp"

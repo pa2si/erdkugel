@@ -9,7 +9,10 @@ import TitleHOne from '@/utils/TitleHOne';
 const page = () => {
   return (
     <main className=" pt-20 container mx-auto mt-1 mb-8">
-      <div className=" flex justify-center underline decoration-erdkugel-text decoration-2 underline-offset-8">
+      <div
+        className=" flex justify-center underline decoration-erdkugel-text decoration-2 underline-offset-8"
+        id="transNav"
+      >
         <TitleHOne text="Datenschutzerklärung" />
       </div>
 

@@ -1,14 +1,14 @@
 new:
 
-- title component adapted
-- About Section
-- Catch Section
-- Studio Berlin Section
-- Hero with moving text
+- This branch is only for basic content (the rest will be commented out and later deleted)
 
 What's done:
 
 - homepage
+- Hero with moving text
+- Studio Berlin Section
+- About Section
+- Catch Section
 - contact route
 - imprint route
 - privacy route
