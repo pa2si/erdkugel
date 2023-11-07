@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <motion.nav
       className={`${styles.navbar} ${
-        transparentNavBg ? styles.transparentNavBg : ''
+        isLogoInView ? styles.transparentNavBg : ''
       }`}
       variants={{
         visible: { y: 0 },

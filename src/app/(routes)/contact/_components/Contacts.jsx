@@ -3,24 +3,21 @@
 import contacts from '../data';
 import Image from 'next/image';
 import { useState } from 'react';
+import { motion, useTransform, useScroll } from 'framer-motion';
 
 const Contacts = () => {
   const [hoveredContact, setHoveredContact] = useState(null);
 
   const handleMouseEnter = (id) => {
-    setTimeout(() => {
-      setHoveredContact(id);
-    }, 150);
+    setHoveredContact(id);
   };
   const handleMouseLeave = () => {
-    setTimeout(() => {
-      setHoveredContact(null);
-    }, 150);
+    setHoveredContact(null);
   };
 
   return (
     <section className="flex justify-center items-center py-7">
-      <div className="grid grid-cols-1 mx-0 sm:mx-4 md:grid-cols-2 gap-7 w-full max-w-6xl">
+      <div className="grid grid-cols-1 mx-0 sm:mx-4 md:grid-cols-2 gap-7 w-full max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-6xl">
         {contacts.map((contact) => {
           const {
             id,

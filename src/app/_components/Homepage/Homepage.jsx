@@ -1,14 +1,16 @@
 import Hero from '@/app/_components/Homepage/_components/Hero/Hero';
-import SectionOne from '@/app/_components/Homepage/_components/SectionOne/SectionOne';
-import StudioWebsiteLiink from './_components/StudioWebsiteLiink';
+import About from './_components/About/About';
+import StudioBerlin from './_components/StudioBerlin/StudioBerlin';
+import CatchPhrase from '@/app/_components/Homepage/_components/Catchphrase/CatchPhrase';
 
 const Homepage = () => {
   return (
     <main>
       <h1 className="sr-only">Welcome to Erdkugel</h1>
       <Hero />
-      <SectionOne />
-      {/*       <StudioWebsiteLiink /> */}
+      <About />
+      <CatchPhrase />
+      <StudioBerlin />
     </main>
   );
 };

@@ -1,4 +1,12 @@
-what's done:
+new:
+
+- title component adapted
+- About Section
+- Catch Section
+- Studio Berlin Section
+- Hero with moving text
+
+What's done:
 
 - homepage
 - contact route
@@ -6,13 +14,11 @@ what's done:
 - privacy route
 - diferent header for homepage and routes
 - footer for main layout.js
-- HP section one
-- HP section two
-  - Plugins with animated text
 
 to do:
 
-Klangee imitieren!
+- Check responsive of Title
+- Check responsive of About
 
 seperate the Refs for two cases. one the background div for the blur and the other for the y and x effect
 

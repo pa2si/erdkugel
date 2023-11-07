@@ -6,7 +6,7 @@ const Footer = () => {
   const { email, imprint, privacyPolicy } = legalData;
 
   return (
-    <footer className=" md:text-lg bottom-0 w-full grid grid-cols-1 sm:grid-cols-3  sm:maxjustify-center sm:justify-between text-center pt-1 pl-4 pr-4 pb-2 sm:pb-0 bg-slate-700 bg-opacity-100 sm:bg-black sm:bg-opacity-50 text-white z-50 border-t-2">
+    <footer className=" md:text-lg w-full grid grid-cols-1 sm:grid-cols-3 sm:justify-between text-center pt-1 pl-4 pr-4 pb-2 sm:pb-0 bg-black bg-opacity-70 sm:bg-black sm:bg-opacity-50 text-white z-50 border-t-2">
       <Companies />
 
       <section>

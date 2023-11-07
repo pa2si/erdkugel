@@ -10,7 +10,7 @@ import {
 } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { useScrollBlurEffect } from '@/utils/slowFadeInAnimationScrolling';
-import Plugins from './Plugins';
+
 import AnimatedText from '@/utils/AnimatedText';
 
 const SectionTwo = () => {
@@ -91,7 +91,7 @@ const SectionTwo = () => {
             </div>
           </div>
         </h2>
-        <Plugins className="absolute" />
+
         <h2 className=" text-base sm:text-4xl ">
           <p className="pt-2 pb-2">and</p>
           <div

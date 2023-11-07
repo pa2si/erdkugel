@@ -4,15 +4,16 @@ export const metadata = {
 };
 
 import styles from './page.module.css';
+import TitleHOne from '@/utils/TitleHOne';
 
 const page = () => {
   return (
     <main className=" pt-20 container mx-auto mt-1 mb-8">
-      <section className="text-center">
-        <h1>Datenschutz&shy;erkl&auml;rung</h1>
-        <div className="title__underline"></div>
-      </section>
-      <article>
+      <div className=" flex justify-center underline decoration-erdkugel-text decoration-2 underline-offset-8">
+        <TitleHOne text="Datenschutzerklärung" />
+      </div>
+
+      <article className="mt-4">
         <address className={` text-center ${styles.privacy}`}>
           <h3>1. Datenschutz auf einen Blick</h3>
           <h5>Allgemeine Hinweise</h5>{' '}

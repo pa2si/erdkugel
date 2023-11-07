@@ -7,13 +7,17 @@ import { usePathname } from 'next/navigation';
 import { useRef, useEffect } from 'react';
 import { motion, useTransform, useInView, useScroll } from 'framer-motion';
 import AnimatedText from '@/utils/AnimatedText';
+import CarouselText from './CarouselText';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import ParallaxText from '@/utils/ParallaxText';
 
 const Hero = () => {
   const logoRef = useRef(null);
   const { scrollYProgress } = useScroll();
 
-  const logoScale = useTransform(scrollYProgress, [0, 0.2, 1], [1, 0.4, 0]);
-  const logoOpacity = useTransform(scrollYProgress, [0, 0.1, 1], [1, 0.4, 0]);
+  const logoScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.4, 0]);
+  const logoOpacity = useTransform(scrollYProgress, [0, 0.3, 1], [1, 0.4, 0]);
 
   const isInView = useInView(logoRef);
   const { setIsLogoInView } = useGlobalContext();
@@ -47,6 +51,8 @@ const Hero = () => {
             scale: logoScale,
           }}
         >
+          {/* Moon Logo */}
+
           <Image
             src="/logos/erdkugel-logo-moon.webp"
             alt="erdkugel logo moon"
@@ -62,6 +68,9 @@ const Hero = () => {
             className="mx-auto mb-3"
           />
         </motion.div>
+
+        {/* Text Logo */}
+
         <motion.div
           style={{
             opacity: logoOpacity,
@@ -83,6 +92,27 @@ const Hero = () => {
             className="mx-auto"
           />
         </motion.div>
+      </motion.div>
+      <motion.div
+        className="absolute  text-white bottom-0 w-4/6 h-8 "
+        ref={logoRef}
+        variants={{
+          hidden: { opacity: 0, y: 90 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 1, duration: 2 }}
+        style={{
+          opacity: logoOpacity,
+          scale: logoScale,
+        }}
+      >
+        {/*     <CarouselText /> */}
+        <ParallaxText
+          text="movie sound post production + dialogue editing + cinema sound mixing + cinema mixing studio building + "
+          baseVelocity={1}
+        />
       </motion.div>
     </section>
   );

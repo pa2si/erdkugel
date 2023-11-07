@@ -3,16 +3,20 @@ export const metadata = {
   description: ' find here the privacy policy for erdkugel lab website',
 };
 
+import TitleHOne from '@/utils/TitleHOne';
 import styles from './page.module.css';
 
 const page = () => {
   return (
     <main className="pt-20 container mx-auto mt-1 mb-8 ">
-      <section className="text-center">
+      <div className=" flex justify-center underline decoration-erdkugel-text decoration-2 underline-offset-8">
+        <TitleHOne text="impressum" />
+      </div>
+      {/*  <section className="text-center">
         <h1>Impressum</h1>
         <div className="title__underline"></div>
-      </section>
-      <article>
+      </section> */}
+      <article className="mt-4">
         <address className={` text-center ${styles.impressum}`}>
           <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
           <p>
