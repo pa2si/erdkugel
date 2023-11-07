@@ -2,8 +2,6 @@
 
 import Image from 'next/image';
 import styles from './Hero.module.css';
-import { useGlobalContext } from '@/utils/context';
-import { usePathname } from 'next/navigation';
 import { useRef, useEffect } from 'react';
 import { motion, useTransform, useInView, useScroll } from 'framer-motion';
 import AnimatedText from '@/utils/AnimatedText';
@@ -19,20 +17,10 @@ const Hero = () => {
   const logoScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.4, 0]);
   const logoOpacity = useTransform(scrollYProgress, [0, 0.3, 1], [1, 0.4, 0]);
 
-  const isInView = useInView(logoRef);
-  const { setIsLogoInView } = useGlobalContext();
-
-  const pathname = usePathname();
-
-  useEffect(() => {
-    if (pathname === '/') {
-      setIsLogoInView(isInView);
-    }
-  }, [isInView, setIsLogoInView, pathname]);
-
   return (
     <section
       className={`flex flex-col items-center h-screen relative ${styles.backgroundOpacity} `}
+      id="hero"
     >
       <motion.div
         ref={logoRef}

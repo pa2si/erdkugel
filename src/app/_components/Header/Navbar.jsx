@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { links, social } from './data';
 import Image from 'next/image';
@@ -19,11 +19,51 @@ const Navbar = () => {
   const { scrollY } = useScroll();
   const pathname = usePathname();
 
-  const { isLogoInView } = useGlobalContext();
+  const [isHeroInView, setIsHeroInView] = useState(true);
 
-  const transparentNavBg = pathname === '/';
+  useEffect(() => {
+    // Function to be called whenever the target meets a threshold of visibility
+    const handleHeroInView = (entries, observer) => {
+      entries.forEach((entry) => {
+        // If the hero element is in view
+        setIsHeroInView(entry.isIntersecting);
+      });
+    };
 
-  const shouldHideLogo = pathname === '/' && isLogoInView;
+    // Options for the intersection observer
+    const options = {
+      root: null, // relative to document viewport
+      rootMargin: '0px', // margin around root. Values are similar to css property. Unitless values not allowed
+      threshold: 0.5, // visible amount of item shown in relation to root
+    };
+
+    // Create an observer
+    const observer = new IntersectionObserver(handleHeroInView, options);
+    // Target element to watch
+    const hero = document.getElementById('hero');
+
+    if (hero) {
+      observer.observe(hero);
+    }
+
+    // Clean up the observer on unmount
+    return () => {
+      if (hero) {
+        observer.unobserve(hero);
+      }
+    };
+  }, []);
+
+  const transparentNavBg = isHeroInView;
+  const shouldHideLogo = isHeroInView;
+
+  const navbarClassNames = [
+    styles.navbar,
+    hidden && styles.hidden,
+    transparentNavBg ? '' : styles.NavBg,
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
@@ -46,9 +86,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`${styles.navbar} ${
-        isLogoInView ? styles.transparentNavBg : ''
-      }`}
+      className={navbarClassNames}
       variants={{
         visible: { y: 0 },
         hidden: { y: '-100%' },
@@ -68,7 +106,12 @@ const Navbar = () => {
                 width="0"
                 height="0"
                 sizes="100vw"
-                style={{ width: '110px', height: 'auto' }}
+                style={{
+                  width: '110px',
+                  height: 'auto',
+                  opacity: isHeroInView ? 0 : 1,
+                  transition: 'opacity 0.3s ease',
+                }}
                 className={`mt-0 sm:mt-1 ml-1 sm:ml-2 md:ml-4 ${
                   shouldHideLogo ? styles.hiddenLogo : ''
                 }`}

@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className="min-h-screen flex justify-center items-center bg-slate-50 px-4 md:px-6 lg:px-8">
-      <div className="container max-w-screen-lg mx-auto">
+    <section className="min-h-screen flex justify-center items-center bg-slate-50  px-4 md:px-6 lg:px-8">
+      <div className="container max-w-screen-lg pt-20">
         <TitleHTwo text="lab" />
         <article className="mt-7 max-w-screen-lg mx-auto text-xl md:text-2xl">
           <p>
@@ -19,14 +19,14 @@ const About = () => {
               <Image
                 src="/images/AndreStiebe.jpg"
                 alt="erdkugel text"
-                layout="fill"
-                objectFit="contain"
-                objectPosition="center"
+                width="0"
+                height="0"
+                sizes="100vw"
                 priority={true}
-                className="mx-auto"
+                className="mx-auto object-contain w-full h-3/5"
               />
             </div>
-            <div className="sm:col-span-2 text-justify">
+            <div className="md:col-span-2 text-justify">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consequuntur, voluptates labore adipisci hic eos sit nesciunt
               earum ducimus molestiae quam voluptas quod aperiam! Sunt, facilis

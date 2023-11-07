@@ -19,6 +19,7 @@ to do:
 
 - Check responsive of Title
 - Check responsive of About
+- Services Section
 
 seperate the Refs for two cases. one the background div for the blur and the other for the y and x effect
 

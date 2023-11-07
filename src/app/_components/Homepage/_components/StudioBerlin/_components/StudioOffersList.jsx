@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { StudioOfferItems } from './data';
 
-const StudioOffers = () => {
+const StudioOffersList = () => {
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
@@ -68,4 +68,4 @@ const StudioOffers = () => {
   );
 };
 
-export default StudioOffers;
+export default StudioOffersList;
