@@ -37,14 +37,21 @@ const CatchPhrase = () => {
     backgroundSize: 'cover', // We're using 'cover' here as a default for mobile
   };
 
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const backgroundStyle =
+    isClient && window.innerWidth >= 1025
+      ? desktopBackgroundStyle
+      : mobileBackgroundStyle;
+
   return (
     <motion.section
       className="w-full h-1/2 sm:bg-cover"
-      style={
-        typeof window !== 'undefined' && window.innerWidth >= 1025
-          ? desktopBackgroundStyle
-          : mobileBackgroundStyle
-      }
+      style={backgroundStyle}
     >
       <div className="  h-96 flex justify-center items-center   w-full bg-transparent">
         <h2 className="absolute text-center sm:text-7xl text-white  shadow-md shadow-white">
