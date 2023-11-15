@@ -4,6 +4,8 @@ new:
 
 What's done:
 
+There are copies of global css and hero names "w-video or w-spot". these are the two ideas of the hero section that need to be paste to the "global css or hero file".
+
 - homepage
 - Hero with moving text
 - Studio Berlin Section
