@@ -61,7 +61,7 @@ const AnimatedText = ({
         initial="hidden"
         animate={controls}
         variants={{
-          visible: { transition: { staggerChildren: 0.09 } },
+          visible: { transition: { staggerChildren: 0.07 } },
           hidden: {},
         }}
         aria-hidden="true"

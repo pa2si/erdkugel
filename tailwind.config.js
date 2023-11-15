@@ -20,6 +20,10 @@ module.exports = {
         linkedin: '#0077B5',
         'erdkugel-text': '#404040',
       },
+      screens: {
+        xxs: '320px',
+        xs: '375px',
+      },
     },
   },
   plugins: [],

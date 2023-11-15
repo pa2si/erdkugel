@@ -45,7 +45,7 @@ const page = () => {
           <p>
             Telefon: +49 (0) 175 72 39 032
             <br />
-            E-Mail: office@erdkugel.de
+            E-Mail: office@erdkugel.net
           </p>
 
           <h3>Umsatzsteuer-ID</h3>

@@ -1,107 +1,51 @@
 'use client';
 
-import Image from 'next/image';
-import styles from './Hero.module.css';
 import { useRef, useEffect } from 'react';
 import { motion, useTransform, useInView, useScroll } from 'framer-motion';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import CarouselText from './CarouselText';
-import AnimatedText from '@/utils/AnimatedText';
-import ParallaxText from '@/utils/ParallaxText';
+import CarouselText from './_components/CarouselText';
+import AnimatedTextWrap from '@/utils/AnimatedTextWrap';
+
+import Logo from './_components/Logo';
+import { MdConstruction } from 'react-icons/md';
 
 const Hero = () => {
-  const logoRef = useRef(null);
   const { scrollYProgress } = useScroll();
 
-  const logoScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.4, 0]);
-  const logoOpacity = useTransform(scrollYProgress, [0, 0.3, 1], [1, 0.4, 0]);
+  const textScale = useTransform(scrollYProgress, [0, 0.4, 1], [1, 0.7, 0]);
+  const textOpacity = useTransform(scrollYProgress, [0, 0.4, 1], [1, 0.7, 0]);
+
+  const textYScroll = useTransform(scrollYProgress, [0, 1], ['0%', '-50%']);
 
   return (
     <section
-      className={`flex flex-col items-center h-screen relative ${styles.backgroundOpacity} `}
+      className=" h-screen w-screen relative grid grid-rows-6  "
       id="transNav"
     >
+      <div className="row-span-2 mt-[4.5rem] sm:mt-[3rem] lg:mt-[6rem]  ">
+        <Logo />
+      </div>
+      <div className="h-full w-full row-span-1"></div>
+
       <motion.div
-        ref={logoRef}
-        variants={{
-          hidden: { opacity: 0, y: 90 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 2 }}
-        className={`z-10 w-20 ${styles.logo}`}
-      >
-        <motion.div
-          style={{
-            opacity: logoOpacity,
-            scale: logoScale,
-          }}
-        >
-          {/* Moon Logo */}
-
-          <Image
-            src="/logos/erdkugel-logo-moon.webp"
-            alt="erdkugel logo moon"
-            width="0"
-            height="0"
-            priority={true}
-            sizes="100vw"
-            style={{
-              objectFit: 'cover',
-              width: '53%',
-              height: 'auto',
-            }}
-            className="mx-auto mb-3"
-          />
-        </motion.div>
-
-        {/* Text Logo */}
-
-        <motion.div
-          style={{
-            opacity: logoOpacity,
-            scale: logoScale,
-          }}
-        >
-          <Image
-            src="/logos/erdkugel-logo-text.webp"
-            alt="erdkugel text"
-            width="0"
-            height="0"
-            priority={true}
-            sizes="100vw"
-            style={{
-              objectFit: 'cover',
-              width: '90%',
-              height: 'auto',
-            }}
-            className="mx-auto"
-          />
-        </motion.div>
-      </motion.div>
-      <motion.div
-        className="absolute  text-white bottom-0 w-4/6 h-8 "
-        ref={logoRef}
-        variants={{
-          hidden: { opacity: 0, y: 90 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate="visible"
-        transition={{ delay: 1, duration: 2 }}
+        className=" w-3/4 mx-auto row-span-3 "
         style={{
-          opacity: logoOpacity,
-          scale: logoScale,
+          opacity: textOpacity,
+          scale: textScale,
+          y: textYScroll,
         }}
       >
-        {/*     <CarouselText /> */}
-        {/*       <ParallaxText
-          text="movie sound post production + dialogue editing + cinema sound mixing + cinema mixing studio building + "
-          baseVelocity={1}
-        /> */}
+        <div className=" text-white text-center w-full sm:w-3/4 mx-auto xxs:text-xl xs:text-2xl sm:text-3xl leading-normal  xxs:pt-7 xs:pt-16 sm:pt-32">
+          <AnimatedTextWrap
+            text="we are the storytellers behind the scenes, sculpting voices and
+          emotions to bring characters to life. We are the unseen architects,
+          ensuring every word is heard, every emotion felt."
+          />
+        </div>
       </motion.div>
+      <div className="flex left absolute bottom-0 right-0 items-center">
+        <p className="text-2xl sm:text-3xl  ">site under construction...</p>
+        <MdConstruction size={40} />
+      </div>
     </section>
   );
 };
