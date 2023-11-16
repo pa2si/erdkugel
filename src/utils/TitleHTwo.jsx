@@ -30,9 +30,12 @@ const TitleHTwo = ({ text }) => {
         duration: 1,
       }}
       id="logoOpacityTarget"
-      className="flex  items-center p-1"
+      className="flex items-center p-1"
     >
-      <div ref={ref} style={{ marginLeft: '0.9rem' }}>
+      <div
+        ref={ref}
+        style={{ marginLeft: '0.9rem', height: 'auto', width: '16rem' }}
+      >
         {pathname === '/' && (
           <Image
             src="/logos/erdkugel-logo-text.webp"
@@ -41,6 +44,7 @@ const TitleHTwo = ({ text }) => {
             height="260"
             priority={true}
             sizes="100vw"
+            className="w-full h-full object-cover"
             style={{ paddingTop: '0.8rem' }}
           />
         )}
@@ -50,8 +54,8 @@ const TitleHTwo = ({ text }) => {
           <Image
             src="/logos/erdkugel-logo-moon.webp"
             alt="erdkugel logo moon"
-            width="63"
-            height="63"
+            width="59"
+            height="59"
             priority={true}
             sizes="100vw"
           />

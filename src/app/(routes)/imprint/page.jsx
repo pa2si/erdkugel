@@ -35,10 +35,8 @@ const page = () => {
             Registergericht: Amtsgericht Leipzig
           </p>
 
-          <p className="text:lg sm:text-xl">
-            <h5 className="text-2xl">Vertreten durch:</h5>
-            <p className="text:lg sm:text-xl mt-1">André Stiebe</p>
-          </p>
+          <h5 className="text-2xl">Vertreten durch:</h5>
+          <p className="text:lg sm:text-xl">André Stiebe</p>
 
           <h3 className="text-2xl sm:text-3xl">Kontakt</h3>
           <p className="text:lg sm:text-xl">

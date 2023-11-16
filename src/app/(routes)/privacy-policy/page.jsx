@@ -31,7 +31,7 @@ const page = () => {
             unserer unter diesem Text aufgef&uuml;hrten
             Datenschutzerkl&auml;rung.
           </p>
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             Lizenzierung der verwendeten Schriftart
           </h4>
           <p className="text-lg sm:text-xl">
@@ -44,7 +44,7 @@ const page = () => {
             Pflicht, den Urheberrechtsvermerk und die Lizenz bei der Verteilung
             oder Bündelung mit unserem Projekt beizufügen.
           </p>
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             Datenerfassung auf dieser Website
           </h4>{' '}
           <h5 className="text-1xl sm:text-2xl">
@@ -57,7 +57,7 @@ const page = () => {
             &bdquo;Hinweis zur Verantwortlichen Stelle&ldquo; in dieser
             Datenschutzerkl&auml;rung entnehmen.
           </p>{' '}
-          <h4 classname="text-2xl sm:text-3xl">Wie erfassen wir Ihre Daten?</h4>{' '}
+          <h4 className="text-2xl sm:text-3xl">Wie erfassen wir Ihre Daten?</h4>{' '}
           <p className="text-lg sm:text-xl">
             Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese
             mitteilen. Hierbei kann es sich z.&nbsp;B. um Daten handeln, die Sie
@@ -70,7 +70,7 @@ const page = () => {
             oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt
             automatisch, sobald Sie diese Website betreten.
           </p>{' '}
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             Wof&uuml;r nutzen wir Ihre Daten?
           </h4>{' '}
           <p className="text-lg sm:text-xl">
@@ -78,7 +78,7 @@ const page = () => {
             der Website zu gew&auml;hrleisten. Andere Daten k&ouml;nnen zur
             Analyse Ihres Nutzerverhaltens verwendet werden.
           </p>{' '}
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-xl sm:text-2xl">
             Welche Rechte haben Sie bez&uuml;glich Ihrer Daten?
           </h4>{' '}
           <p className="text-lg sm:text-xl">
@@ -101,7 +101,7 @@ const page = () => {
           <h3 className="text-2xl sm:text-3xl mb-2">
             2.Hosting und technische Umsetzung der Website
           </h3>
-          <h4 classname="text-2xl sm:text-3xl">a. Domain-Registrierung</h4>
+          <h4 className="text-2xl sm:text-3xl">a. Domain-Registrierung</h4>
           <p className="text-lg sm:text-xl">
             Unsere Domain ist bei dem Anbieter DomainFactory registriert.
             Anbieter ist die DomainFactory GmbH, c/o WeWork, Neuturmstraße 5,
@@ -119,7 +119,7 @@ const page = () => {
             </a>
             .
           </p>
-          <h4 classname="text-2xl sm:text-3xl">b. Hosting der Website</h4>
+          <h4 className="text-2xl sm:text-3xl">b. Hosting der Website</h4>
           <p className="text-lg sm:text-xl">
             Die technische Plattform und das Hosting unserer Website erfolgt
             durch den Anbieter Vercel, Inc. Anbieter ist die Vercel, Inc., 340 S
@@ -151,10 +151,10 @@ const page = () => {
             ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO. Die
             Einwilligung ist jederzeit widerrufbar.
           </p>
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             3. Allgemeine Hinweise und Pflicht&shy;informationen
           </h4>
-          <h4 classname="text-2xl sm:text-3xl">Datenschutz</h4>{' '}
+          <h4 className="text-2xl sm:text-3xl">Datenschutz</h4>{' '}
           <p className="text-lg sm:text-xl">
             Die Betreiber dieser Seiten nehmen den Schutz Ihrer
             pers&ouml;nlichen Daten sehr ernst. Wir behandeln Ihre
@@ -176,7 +176,7 @@ const page = () => {
             aufweisen kann. Ein l&uuml;ckenloser Schutz der Daten vor dem
             Zugriff durch Dritte ist nicht m&ouml;glich.
           </p>
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             Hinweis zur verantwortlichen Stelle
           </h4>{' '}
           <p className="text-lg sm:text-xl">
@@ -201,7 +201,7 @@ const page = () => {
             und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B.
             Namen, E-Mail-Adressen o. &Auml;.) entscheidet.
           </p>
-          <h4 classname="text-2xl sm:text-3xl">Speicherdauer</h4>{' '}
+          <h4 className="text-2xl sm:text-3xl">Speicherdauer</h4>{' '}
           <p className="text-lg sm:text-xl">
             Soweit innerhalb dieser Datenschutzerkl&auml;rung keine speziellere
             Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten
@@ -214,7 +214,7 @@ const page = () => {
             handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall
             erfolgt die L&ouml;schung nach Fortfall dieser Gr&uuml;nde.
           </p>
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung
             auf dieser Website
           </h4>{' '}
@@ -242,7 +242,7 @@ const page = () => {
             Rechtsgrundlagen wird in den folgenden Abs&auml;tzen dieser
             Datenschutzerkl&auml;rung informiert.
           </p>
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             Empfänger von personenbezogenen Daten
           </h4>{' '}
           <p className="text-lg sm:text-xl">
@@ -261,7 +261,7 @@ const page = () => {
             Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung
             wird ein Vertrag &uuml;ber gemeinsame Verarbeitung geschlossen.
           </p>
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             Widerruf Ihrer Einwilligung zur Datenverarbeitung
           </h4>{' '}
           <p className="text-lg sm:text-xl">
@@ -271,7 +271,7 @@ const page = () => {
             Rechtm&auml;&szlig;igkeit der bis zum Widerruf erfolgten
             Datenverarbeitung bleibt vom Widerruf unber&uuml;hrt.
           </p>
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             Widerspruchsrecht gegen die Datenerhebung in besonderen F&auml;llen
             sowie gegen Direktwerbung (Art. 21 DSGVO)
           </h4>{' '}
@@ -301,7 +301,7 @@ const page = () => {
             ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET
             (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).
           </p>
-          <h4 classname="text-2xl sm:text-3xl">
+          <h4 className="text-2xl sm:text-3xl">
             Beschwerde&shy;recht bei der zust&auml;ndigen
             Aufsichts&shy;beh&ouml;rde
           </h4>{' '}
@@ -314,7 +314,7 @@ const page = () => {
             unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher
             Rechtsbehelfe.
           </p>
-          <h4>Recht auf Daten&shy;&uuml;bertrag&shy;barkeit</h4>{' '}
+          <h4>RechtNauf Daten&shy;&uuml;bertrag&shy;barkeit</h4>{' '}
           <p className="text-lg sm:text-xl">
             Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung
             oder in Erf&uuml;llung eines Vertrags automatisiert verarbeiten, an
@@ -323,7 +323,7 @@ const page = () => {
             &Uuml;bertragung der Daten an einen anderen Verantwortlichen
             verlangen, erfolgt dies nur, soweit es technisch machbar ist.
           </p>
-          <h4>Auskunft, Berichtigung und L&ouml;schung</h4>{' '}
+          <h4>AuskuNft, Berichtigung und L&ouml;schung</h4>{' '}
           <p className="text-lg sm:text-xl">
             Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen
             jederzeit das Recht auf unentgeltliche Auskunft &uuml;ber Ihre
@@ -333,7 +333,7 @@ const page = () => {
             zu weiteren Fragen zum Thema personenbezogene Daten k&ouml;nnen Sie
             sich jederzeit an uns wenden.
           </p>
-          <h4>Recht auf Einschr&auml;nkung der Verarbeitung</h4>{' '}
+          <h4>RechtNauf Einschr&auml;nkung der Verarbeitung</h4>{' '}
           <p className="text-lg sm:text-xl">
             Sie haben das Recht, die Einschr&auml;nkung der Verarbeitung Ihrer
             personenbezogenen Daten zu verlangen. Hierzu k&ouml;nnen Sie sich
@@ -381,7 +381,7 @@ const page = () => {
             eines wichtigen &ouml;ffentlichen Interesses der Europ&auml;ischen
             Union oder eines Mitgliedstaats verarbeitet werden.
           </p>
-          <h4>SSL- bzw. TLS-Verschl&uuml;sselung</h4>{' '}
+          <h4>SSL- Nzw. TLS-Verschl&uuml;sselung</h4>{' '}
           <p className="text-lg sm:text-xl">
             Diese Seite nutzt aus Sicherheitsgr&uuml;nden und zum Schutz der
             &Uuml;bertragung vertraulicher Inhalte, wie zum Beispiel
@@ -397,7 +397,7 @@ const page = () => {
             k&ouml;nnen die Daten, die Sie an uns &uuml;bermitteln, nicht von
             Dritten mitgelesen werden.
           </p>
-          <h4>Widerspruch gegen Werbe-E-Mails</h4>{' '}
+          <h4>WiderNpruch gegen Werbe-E-Mails</h4>{' '}
           <p className="text-lg sm:text-xl">
             Der Nutzung von im Rahmen der Impressumspflicht
             ver&ouml;ffentlichten Kontaktdaten zur &Uuml;bersendung von nicht
@@ -406,8 +406,8 @@ const page = () => {
             ausdr&uuml;cklich rechtliche Schritte im Falle der unverlangten
             Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
           </p>
-          <h4>4. Datenerfassung auf dieser Website</h4>
-          <h4>Anfrage per E-Mail, Telefon oder Telefax</h4>{' '}
+          <h4>4. DaNenerfassung auf dieser Website</h4>
+          <h4>AnfraNe per E-Mail, Telefon oder Telefax</h4>{' '}
           <p className="text-lg sm:text-xl">
             Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird
             Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen
