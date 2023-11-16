@@ -1,7 +1,7 @@
 .impressum {
   font-family: JosefinSans-light;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
 
   padding: 2rem 0 2rem 0;
   max-width: var(--max-width);
@@ -15,4 +15,10 @@
   background-color: var(#ffffff);
   overflow: scroll;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 880px) {
+  .impresum {
+    font-size: small !important;
+  }
 }

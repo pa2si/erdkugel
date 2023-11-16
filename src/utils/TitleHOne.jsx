@@ -31,7 +31,7 @@ const TitleHOne = ({ text }) => {
       }}
     >
       <h1
-        className=" flex items-center text-erdkugel-text text-5xl "
+        className=" flex items-center text-erdkugel-text  "
         ref={ref}
         id="hero"
       >

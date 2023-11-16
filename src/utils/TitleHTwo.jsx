@@ -29,32 +29,40 @@ const TitleHTwo = ({ text }) => {
       transition={{
         duration: 1,
       }}
-      className=""
+      id="logoOpacityTarget"
+      className="flex  items-center p-1"
     >
-      <div
-        ref={ref}
-        className="flex items-center text-erdkugel-text "
-        style={{ width: '15rem', height: '3.5rem' }}
-      >
+      <div ref={ref} style={{ marginLeft: '0.9rem' }}>
         {pathname === '/' && (
           <Image
             src="/logos/erdkugel-logo-text.webp"
             alt="erdkugel logo text"
-            width="0"
-            height="0"
+            width="260"
+            height="260"
             priority={true}
             sizes="100vw"
-            className="inline-block w-full h-full object-cover"
-            style={{ marginRight: '1rem' }}
+            style={{ paddingTop: '0.8rem' }}
           />
         )}
-        <h2
-          className="text-5xl "
-          style={{ width: '20rem', whiteSpace: 'nowrap' }}
-        >
-          {text}
-        </h2>
       </div>
+      <div ref={ref} style={{ marginLeft: '1rem' }}>
+        {pathname === '/' && (
+          <Image
+            src="/logos/erdkugel-logo-moon.webp"
+            alt="erdkugel logo moon"
+            width="63"
+            height="63"
+            priority={true}
+            sizes="100vw"
+          />
+        )}
+      </div>
+      <h2
+        className="text-5xl "
+        style={{ width: '20rem', whiteSpace: 'nowrap' }}
+      >
+        {text}
+      </h2>
     </motion.div>
   );
 };

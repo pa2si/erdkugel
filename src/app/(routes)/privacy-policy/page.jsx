@@ -8,7 +8,7 @@ import TitleHOne from '@/utils/TitleHOne';
 
 const page = () => {
   return (
-    <main className=" pt-20 container mx-auto mt-1 mb-8">
+    <main className=" pt-20 sm:container sm:mx-auto mt-1 sm:mb-8">
       <div
         className=" flex justify-center underline decoration-erdkugel-text decoration-2 underline-offset-8"
         id="transNav"
@@ -18,9 +18,11 @@ const page = () => {
 
       <article className="mt-4">
         <address className={` text-center ${styles.privacy}`}>
-          <h3>1. Datenschutz auf einen Blick</h3>
-          <h5>Allgemeine Hinweise</h5>{' '}
-          <p>
+          <h3 className="text-2xl sm:text-3xl mb-2">
+            1. Datenschutz auf einen Blick
+          </h3>
+          <h5 className="text-1xl sm:text-2xl">Allgemeine Hinweise</h5>{' '}
+          <p className="text-lg sm:text-xl">
             Die folgenden Hinweise geben einen einfachen &Uuml;berblick
             dar&uuml;ber, was mit Ihren personenbezogenen Daten passiert, wenn
             Sie diese Website besuchen. Personenbezogene Daten sind alle Daten,
@@ -29,8 +31,10 @@ const page = () => {
             unserer unter diesem Text aufgef&uuml;hrten
             Datenschutzerkl&auml;rung.
           </p>
-          <h4>Lizenzierung der verwendeten Schriftart</h4>
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">
+            Lizenzierung der verwendeten Schriftart
+          </h4>
+          <p className="text-lg sm:text-xl">
             In diesem Projekt verwenden wir eine urheberrechtlich geschützte
             Schriftart, die unter der SIL Open Font License, Version 1.1,
             lizenziert ist. Die Schriftart wurde von Santiago Orozco erstellt.
@@ -40,38 +44,44 @@ const page = () => {
             Pflicht, den Urheberrechtsvermerk und die Lizenz bei der Verteilung
             oder Bündelung mit unserem Projekt beizufügen.
           </p>
-          <h4>Datenerfassung auf dieser Website</h4>{' '}
-          <h5>
+          <h4 classname="text-2xl sm:text-3xl">
+            Datenerfassung auf dieser Website
+          </h4>{' '}
+          <h5 className="text-1xl sm:text-2xl">
             Wer ist verantwortlich f&uuml;r die Datenerfassung auf dieser
             Website?
           </h5>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Die Datenverarbeitung auf dieser Website erfolgt durch den
             Websitebetreiber. Dessen Kontaktdaten k&ouml;nnen Sie dem Abschnitt
             &bdquo;Hinweis zur Verantwortlichen Stelle&ldquo; in dieser
             Datenschutzerkl&auml;rung entnehmen.
           </p>{' '}
-          <h4>Wie erfassen wir Ihre Daten?</h4>{' '}
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">Wie erfassen wir Ihre Daten?</h4>{' '}
+          <p className="text-lg sm:text-xl">
             Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese
             mitteilen. Hierbei kann es sich z.&nbsp;B. um Daten handeln, die Sie
             in ein Kontaktformular eingeben.
           </p>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Andere Daten werden automatisch oder nach Ihrer Einwilligung beim
             Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor
             allem technische Daten (z.&nbsp;B. Internetbrowser, Betriebssystem
             oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt
             automatisch, sobald Sie diese Website betreten.
           </p>{' '}
-          <h4>Wof&uuml;r nutzen wir Ihre Daten?</h4>{' '}
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">
+            Wof&uuml;r nutzen wir Ihre Daten?
+          </h4>{' '}
+          <p className="text-lg sm:text-xl">
             Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung
             der Website zu gew&auml;hrleisten. Andere Daten k&ouml;nnen zur
             Analyse Ihres Nutzerverhaltens verwendet werden.
           </p>{' '}
-          <h4>Welche Rechte haben Sie bez&uuml;glich Ihrer Daten?</h4>{' '}
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">
+            Welche Rechte haben Sie bez&uuml;glich Ihrer Daten?
+          </h4>{' '}
+          <p className="text-lg sm:text-xl">
             Sie haben jederzeit das Recht, unentgeltlich Auskunft &uuml;ber
             Herkunft, Empf&auml;nger und Zweck Ihrer gespeicherten
             personenbezogenen Daten zu erhalten. Sie haben au&szlig;erdem ein
@@ -84,18 +94,20 @@ const page = () => {
             ein Beschwerderecht bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde
             zu.
           </p>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Hierzu sowie zu weiteren Fragen zum Thema Datenschutz k&ouml;nnen
             Sie sich jederzeit an uns wenden.
           </p>
-          <h3>2.Hosting und technische Umsetzung der Website</h3>
-          <h4>a. Domain-Registrierung</h4>
-          <p>
+          <h3 className="text-2xl sm:text-3xl mb-2">
+            2.Hosting und technische Umsetzung der Website
+          </h3>
+          <h4 classname="text-2xl sm:text-3xl">a. Domain-Registrierung</h4>
+          <p className="text-lg sm:text-xl">
             Unsere Domain ist bei dem Anbieter DomainFactory registriert.
             Anbieter ist die DomainFactory GmbH, c/o WeWork, Neuturmstraße 5,
             80331 München (nachfolgend DomainFactory).
           </p>
-          <p>
+          <p className="text-lg sm:text-xl">
             Details entnehmen Sie der Datenschutzerkl&auml;rung von
             DomainFactory:{' '}
             <a
@@ -107,8 +119,8 @@ const page = () => {
             </a>
             .
           </p>
-          <h4>b. Hosting der Website</h4>
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">b. Hosting der Website</h4>
+          <p className="text-lg sm:text-xl">
             Die technische Plattform und das Hosting unserer Website erfolgt
             durch den Anbieter Vercel, Inc. Anbieter ist die Vercel, Inc., 340 S
             Lemon Ave #4133, Walnut, CA 91789, USA (nachfolgend Vercel). Da
@@ -118,7 +130,7 @@ const page = () => {
             Datenverarbeitungsvertrag abgeschlossen, der die Standards der DSGVO
             berücksichtigt.
           </p>
-          <p>
+          <p className="text-lg sm:text-xl">
             Details zum Datenschutz und zur Verarbeitung personenbezogener Daten
             durch Vercel entnehmen Sie der Datenschutzerklärung von Vercel:
             <a
@@ -130,7 +142,7 @@ const page = () => {
             </a>
             .
           </p>
-          <p>
+          <p className="text-lg sm:text-xl">
             Die Verwendung von DomainFactory und Vercel erfolgt auf Grundlage
             von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse
             an einer möglichst zuverlässigen Registrierung unserer Domain sowie
@@ -139,16 +151,18 @@ const page = () => {
             ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO. Die
             Einwilligung ist jederzeit widerrufbar.
           </p>
-          <h4>3. Allgemeine Hinweise und Pflicht&shy;informationen</h4>
-          <h4>Datenschutz</h4>{' '}
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">
+            3. Allgemeine Hinweise und Pflicht&shy;informationen
+          </h4>
+          <h4 classname="text-2xl sm:text-3xl">Datenschutz</h4>{' '}
+          <p className="text-lg sm:text-xl">
             Die Betreiber dieser Seiten nehmen den Schutz Ihrer
             pers&ouml;nlichen Daten sehr ernst. Wir behandeln Ihre
             personenbezogenen Daten vertraulich und entsprechend den
             gesetzlichen Datenschutzvorschriften sowie dieser
             Datenschutzerkl&auml;rung.
           </p>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Wenn Sie diese Website benutzen, werden verschiedene
             personenbezogene Daten erhoben. Personenbezogene Daten sind Daten,
             mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Die
@@ -156,37 +170,39 @@ const page = () => {
             wir erheben und wof&uuml;r wir sie nutzen. Sie erl&auml;utert auch,
             wie und zu welchem Zweck das geschieht.
           </p>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Wir weisen darauf hin, dass die Daten&uuml;bertragung im Internet
             (z.&nbsp;B. bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken
             aufweisen kann. Ein l&uuml;ckenloser Schutz der Daten vor dem
             Zugriff durch Dritte ist nicht m&ouml;glich.
           </p>
-          <h4>Hinweis zur verantwortlichen Stelle</h4>{' '}
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">
+            Hinweis zur verantwortlichen Stelle
+          </h4>{' '}
+          <p className="text-lg sm:text-xl">
             Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser
             Website ist:
           </p>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             erdkugel gmbh
             <br />
             Engertstraße 13
             <br />
             04177 Leipzig
           </p>
-          <p>
+          <p className="text-lg sm:text-xl">
             Telefon: +49 (0) 175 723 90 32
             <br />
             E-Mail: office@erdkugel.net
           </p>
-          <p>
+          <p className="text-lg sm:text-xl">
             Verantwortliche Stelle ist die nat&uuml;rliche oder juristische
             Person, die allein oder gemeinsam mit anderen &uuml;ber die Zwecke
             und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B.
             Namen, E-Mail-Adressen o. &Auml;.) entscheidet.
           </p>
-          <h4>Speicherdauer</h4>{' '}
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">Speicherdauer</h4>{' '}
+          <p className="text-lg sm:text-xl">
             Soweit innerhalb dieser Datenschutzerkl&auml;rung keine speziellere
             Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten
             bei uns, bis der Zweck f&uuml;r die Datenverarbeitung entf&auml;llt.
@@ -198,11 +214,11 @@ const page = () => {
             handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall
             erfolgt die L&ouml;schung nach Fortfall dieser Gr&uuml;nde.
           </p>
-          <h4>
+          <h4 classname="text-2xl sm:text-3xl">
             Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung
             auf dieser Website
           </h4>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten
             wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1
             lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere
@@ -226,8 +242,10 @@ const page = () => {
             Rechtsgrundlagen wird in den folgenden Abs&auml;tzen dieser
             Datenschutzerkl&auml;rung informiert.
           </p>
-          <h4>Empfänger von personenbezogenen Daten</h4>{' '}
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">
+            Empfänger von personenbezogenen Daten
+          </h4>{' '}
+          <p className="text-lg sm:text-xl">
             Im Rahmen unserer Gesch&auml;ftst&auml;tigkeit arbeiten wir mit
             verschiedenen externen Stellen zusammen. Dabei ist teilweise auch
             eine &Uuml;bermittlung von personenbezogenen Daten an diese externen
@@ -243,19 +261,21 @@ const page = () => {
             Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung
             wird ein Vertrag &uuml;ber gemeinsame Verarbeitung geschlossen.
           </p>
-          <h4>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h4>{' '}
-          <p>
+          <h4 classname="text-2xl sm:text-3xl">
+            Widerruf Ihrer Einwilligung zur Datenverarbeitung
+          </h4>{' '}
+          <p className="text-lg sm:text-xl">
             Viele Datenverarbeitungsvorg&auml;nge sind nur mit Ihrer
             ausdr&uuml;cklichen Einwilligung m&ouml;glich. Sie k&ouml;nnen eine
             bereits erteilte Einwilligung jederzeit widerrufen. Die
             Rechtm&auml;&szlig;igkeit der bis zum Widerruf erfolgten
             Datenverarbeitung bleibt vom Widerruf unber&uuml;hrt.
           </p>
-          <h4>
+          <h4 classname="text-2xl sm:text-3xl">
             Widerspruchsrecht gegen die Datenerhebung in besonderen F&auml;llen
             sowie gegen Direktwerbung (Art. 21 DSGVO)
           </h4>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E
             ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS
             GR&Uuml;NDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN
@@ -271,7 +291,7 @@ const page = () => {
             GELTENDMACHUNG, AUS&Uuml;BUNG ODER VERTEIDIGUNG VON
             RECHTSANSPR&Uuml;CHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).
           </p>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU
             BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE
             VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE
@@ -281,11 +301,11 @@ const page = () => {
             ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET
             (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).
           </p>
-          <h4>
+          <h4 classname="text-2xl sm:text-3xl">
             Beschwerde&shy;recht bei der zust&auml;ndigen
             Aufsichts&shy;beh&ouml;rde
           </h4>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Im Falle von Verst&ouml;&szlig;en gegen die DSGVO steht den
             Betroffenen ein Beschwerderecht bei einer Aufsichtsbeh&ouml;rde,
             insbesondere in dem Mitgliedstaat ihres gew&ouml;hnlichen
@@ -295,7 +315,7 @@ const page = () => {
             Rechtsbehelfe.
           </p>
           <h4>Recht auf Daten&shy;&uuml;bertrag&shy;barkeit</h4>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung
             oder in Erf&uuml;llung eines Vertrags automatisiert verarbeiten, an
             sich oder an einen Dritten in einem g&auml;ngigen, maschinenlesbaren
@@ -304,7 +324,7 @@ const page = () => {
             verlangen, erfolgt dies nur, soweit es technisch machbar ist.
           </p>
           <h4>Auskunft, Berichtigung und L&ouml;schung</h4>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen
             jederzeit das Recht auf unentgeltliche Auskunft &uuml;ber Ihre
             gespeicherten personenbezogenen Daten, deren Herkunft und
@@ -314,7 +334,7 @@ const page = () => {
             sich jederzeit an uns wenden.
           </p>
           <h4>Recht auf Einschr&auml;nkung der Verarbeitung</h4>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Sie haben das Recht, die Einschr&auml;nkung der Verarbeitung Ihrer
             personenbezogenen Daten zu verlangen. Hierzu k&ouml;nnen Sie sich
             jederzeit an uns wenden. Das Recht auf Einschr&auml;nkung der
@@ -351,7 +371,7 @@ const page = () => {
               zu verlangen.
             </li>{' '}
           </ul>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten
             eingeschr&auml;nkt haben, d&uuml;rfen diese Daten &ndash; von ihrer
             Speicherung abgesehen &ndash; nur mit Ihrer Einwilligung oder zur
@@ -362,7 +382,7 @@ const page = () => {
             Union oder eines Mitgliedstaats verarbeitet werden.
           </p>
           <h4>SSL- bzw. TLS-Verschl&uuml;sselung</h4>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Diese Seite nutzt aus Sicherheitsgr&uuml;nden und zum Schutz der
             &Uuml;bertragung vertraulicher Inhalte, wie zum Beispiel
             Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber
@@ -372,13 +392,13 @@ const page = () => {
             &bdquo;https://&ldquo; wechselt und an dem Schloss-Symbol in Ihrer
             Browserzeile.
           </p>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Wenn die SSL- bzw. TLS-Verschl&uuml;sselung aktiviert ist,
             k&ouml;nnen die Daten, die Sie an uns &uuml;bermitteln, nicht von
             Dritten mitgelesen werden.
           </p>
           <h4>Widerspruch gegen Werbe-E-Mails</h4>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Der Nutzung von im Rahmen der Impressumspflicht
             ver&ouml;ffentlichten Kontaktdaten zur &Uuml;bersendung von nicht
             ausdr&uuml;cklich angeforderter Werbung und Informationsmaterialien
@@ -388,14 +408,14 @@ const page = () => {
           </p>
           <h4>4. Datenerfassung auf dieser Website</h4>
           <h4>Anfrage per E-Mail, Telefon oder Telefax</h4>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird
             Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen
             Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei
             uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne
             Ihre Einwilligung weiter.
           </p>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs.
             1 lit. b DSGVO, sofern Ihre Anfrage mit der Erf&uuml;llung eines
             Vertrags zusammenh&auml;ngt oder zur Durchf&uuml;hrung
@@ -406,7 +426,7 @@ const page = () => {
             Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt
             wurde; die Einwilligung ist jederzeit widerrufbar.
           </p>{' '}
-          <p>
+          <p className="text-lg sm:text-xl">
             Die von Ihnen an uns per Kontaktanfragen &uuml;bersandten Daten
             verbleiben bei uns, bis Sie uns zur L&ouml;schung auffordern, Ihre
             Einwilligung zur Speicherung widerrufen oder der Zweck f&uuml;r die
@@ -415,7 +435,7 @@ const page = () => {
             &ndash; insbesondere gesetzliche Aufbewahrungsfristen &ndash;
             bleiben unber&uuml;hrt.
           </p>
-          <p>
+          <p className="text-lg sm:text-xl">
             Quelle:{' '}
             <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
           </p>

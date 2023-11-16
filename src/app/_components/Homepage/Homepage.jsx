@@ -1,16 +1,14 @@
-import Hero from '@/app/_components/Homepage/_components/Hero/Hero';
-import About from './_components/About/About';
-import StudioBerlin from './_components/StudioBerlin/StudioBerlin';
-import CatchPhrase from '@/app/_components/Homepage/_components/Catchphrase/CatchPhrase';
+import Branches from './_components/Branches/Branches';
+import Modal from './_components/Branches/_components/Modal/Modal';
+import UnderConstruction from './_components/UnderConstruction/UnderConstruction';
 
 const Homepage = () => {
   return (
-    <main>
+    <main className="flex-grow">
       <h1 className="sr-only">Welcome to Erdkugel</h1>
-      <Hero />
-      <StudioBerlin />
-      <CatchPhrase />
-      <About />
+      <Branches />
+      <Modal />
+      <UnderConstruction />
     </main>
   );
 };

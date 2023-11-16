@@ -108,12 +108,8 @@ body {
   font-weight: 300;
   line-height: 1;
   color: var(--textColor);
-  background: linear-gradient(
-      to top,
-      rgba(62, 81, 81, 0.4),
-      rgba(146, 127, 94, 0.4)
-    ),
-    url('/images/erdkugel-landing_wo-logo-w-smoke.png');
+
+  background: url('/images/erdkugel-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -137,7 +133,13 @@ h5 {
 }
 
 h1 {
-  font-size: 3.052rem;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 2.052rem;
+  }
 }
 
 h2 {

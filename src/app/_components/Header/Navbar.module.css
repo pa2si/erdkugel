@@ -1,23 +1,20 @@
 .navbar {
-  background-color: transparent;
-  box-shadow: none !important;
+  top: 0;
+  width: 100%;
+
+  background: linear-gradient(
+    to right,
+    rgba(184, 184, 184, 1),
+    rgba(0, 0, 0, 0.8)
+  );
+  box-shadow: var(--shadow-3);
   transition: transform 0.3s ease, background-color 0.3s ease;
   z-index: 999;
   position: fixed;
-  top: 0;
-  width: 100%;
+
   border-bottom: 1px solid var(--border-color);
 }
-.navbar.NavBg {
-  background: linear-gradient(
-    to right,
-    rgba(194, 194, 181, 0.95),
-    rgba(36, 41, 41, 0.95)
-  );
-  box-shadow: var(--shadow-3);
-  border-bottom: 1px solid var(--border-color);
-  padding: 0.7rem;
-}
+
 .navbar.hidden {
   transform: translateY(-100%);
 }
@@ -44,34 +41,29 @@
   transform: rotate(90deg);
 }
 
-.logo {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  height: 80px;
-  width: fit-content;
-}
-
-.logoVisible {
-  opacity: 1 !important; /* Use !important to override any inline styles if necessary */
-}
-
 .links__container {
   overflow: hidden;
   transition: var(--transition);
   gap: 20px;
 }
+
+.links {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .links a {
   color: var(--white);
   font-size: 1rem;
-  /* text-transform: capitalize; */
   letter-spacing: 3px;
   display: block;
   padding: 0.5rem 1rem;
   transition: var(--transition);
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
 }
+
 .menu__links a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .links a:hover {
   color: rgb(254 240 138);
@@ -84,7 +76,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .nav__toggle {
     display: none;
   }
@@ -92,12 +84,12 @@
     padding: 0;
   }
   .nav_center {
-    max-width: 1170px;
+    max-width: 97%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.4rem 0.5rem 0.2rem 0.5rem;
+    padding: 0.5rem 0.4rem 0.2rem 0.5rem;
   }
 
   .links__container {
@@ -106,7 +98,10 @@
     display: flex;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1024px) {
+    .nav_center {
+      max-width: 82%;
+    }
     .menu__links a:hover {
       transform: scale(1.05);
     }
@@ -130,7 +125,6 @@
   .social__icons {
     display: flex;
     gap: 0.5rem;
-    margin-right: 2rem;
   }
 
   .iconWrapper {

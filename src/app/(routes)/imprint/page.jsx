@@ -8,21 +8,20 @@ import styles from './page.module.css';
 
 const page = () => {
   return (
-    <main className="pt-20 container mx-auto mt-1 mb-8 ">
+    <main className="pt-20 sm:container sm:mx-auto mt-1 sm:mb-8 ">
       <div
         className=" flex justify-center underline decoration-erdkugel-text decoration-2 underline-offset-8"
         id="transNav"
       >
-        <TitleHOne text="impressum" />
+        <TitleHOne text="Impressum" />
       </div>
-      {/*  <section className="text-center">
-        <h1>Impressum</h1>
-        <div className="title__underline"></div>
-      </section> */}
+
       <article className="mt-4">
         <address className={` text-center ${styles.impressum}`}>
-          <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
-          <p>
+          <h3 className="text-2xl sm:text-3xl">
+            Angaben gem&auml;&szlig; &sect; 5 TMG
+          </h3>
+          <p className="text:lg sm:text-xl">
             erdkugel GmbH
             <br />
             Engertstraße 13
@@ -30,34 +29,34 @@ const page = () => {
             04177 Leipzig
           </p>
 
-          <p>
+          <p className="text:lg sm:text-xl">
             Handelsregister: HRB 41027
             <br />
             Registergericht: Amtsgericht Leipzig
           </p>
 
-          <p>
-            <h5>Vertreten durch:</h5>
-            <p className="mt-1">André Stiebe</p>
+          <p className="text:lg sm:text-xl">
+            <h5 className="text-2xl">Vertreten durch:</h5>
+            <p className="text:lg sm:text-xl mt-1">André Stiebe</p>
           </p>
 
-          <h3>Kontakt</h3>
-          <p>
+          <h3 className="text-2xl sm:text-3xl">Kontakt</h3>
+          <p className="text:lg sm:text-xl">
             Telefon: +49 (0) 175 72 39 032
             <br />
             E-Mail: office@erdkugel.net
           </p>
 
-          <h3>Umsatzsteuer-ID</h3>
-          <p>
+          <h3 className="text-2xl sm:text-3xl">Umsatzsteuer-ID</h3>
+          <p className="text:lg sm:text-xl">
             Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a
             Umsatzsteuergesetz:
             <br />
             DE321414736
           </p>
 
-          <h3>EU-Streitschlichtung</h3>
-          <p>
+          <h3 className="text-2xl sm:text-3xl">EU-Streitschlichtung</h3>
+          <p className="text:lg sm:text-xl">
             Die Europ&auml;ische Kommission stellt eine Plattform zur
             Online-Streitbeilegung (OS) bereit:{' '}
             <a
@@ -70,16 +69,17 @@ const page = () => {
             .<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.
           </p>
 
-          <h3>
-            Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
+          <h3 className="text-2xl sm:text-3xl">
+            Verbraucher&shy;streit&shy;beilegung /
+            Universal&shy;schlichtungs&shy;stelle
           </h3>
-          <p>
+          <p className="text:lg sm:text-xl">
             Wir sind nicht bereit oder verpflichtet, an
             Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
             teilzunehmen.
           </p>
 
-          <p>
+          <p className="text:lg sm:text-xl">
             Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a>
           </p>
         </address>

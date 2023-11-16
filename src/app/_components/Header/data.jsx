@@ -4,15 +4,15 @@ export const links = [
     url: '/',
     text: 'home',
   },
-  /*   {
+  {
     id: 2,
-    url: '#erdkugelStudioBerlin',
-    text: 'erdkugel studios berlin',
-  }, */
+    url: '#lab',
+    text: 'lab',
+  },
   {
     id: 3,
-    url: '/contact',
-    text: 'contact',
+    url: '#studios',
+    text: 'studios',
   },
 ];
 

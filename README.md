@@ -1,27 +1,16 @@
 new:
 
-- This branch is only for basic content (the rest will be commented out and later deleted)
+- start of new branch w name landing-only
 
 What's done:
 
-There are copies of global css and hero names "w-video or w-spot". these are the two ideas of the hero section that need to be paste to the "global css or hero file".
-
-- homepage
-- Hero with moving text
-- Studio Berlin Section
-- About Section
-- Catch Section
-- contact route
+- header in main laouyt w navbar that has logic to show logo in navbar only when target id is observed.
+- footer in main layout
+- homepage as landing page
+  - branches list
+  - modal to show contact by clicking on contact or componies in footer
 - imprint route
 - privacy route
-- diferent header for homepage and routes
-- footer for main layout.js
-
-to do:
-
-- Check responsive of Title
-- Check responsive of About
-- Services Section
 
 seperate the Refs for two cases. one the background div for the blur and the other for the y and x effect
 

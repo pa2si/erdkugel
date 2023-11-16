@@ -17,6 +17,6 @@ export const companyData = [
 
 export const legalData = {
   email: 'office@erdkugel.net',
-  imprint: 'Imprint',
-  privacyPolicy: 'Privacy Policy',
+  imprint: 'imprint',
+  privacyPolicy: 'privacy policy',
 };

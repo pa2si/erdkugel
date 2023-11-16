@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import styles from './Navbar.module.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useGlobalContext } from '@/utils/context';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -19,51 +18,49 @@ const Navbar = () => {
   const { scrollY } = useScroll();
   const pathname = usePathname();
 
-  const [isHeroInView, setIsHeroInView] = useState(true);
+  const [isLogoOpacityTarget, setIsLogoOpacityTarget] = useState(true);
 
   useEffect(() => {
     // Function to be called whenever the target meets a threshold of visibility
-    const handleHeroInView = (entries, observer) => {
+    const handleLogoOpacityTargetInView = (entries) => {
       entries.forEach((entry) => {
-        // If the hero element is in view
-        setIsHeroInView(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          /*           console.log('target is in view'); */
+          setIsLogoOpacityTarget(true);
+        } else {
+          /*           console.log('target has left the view'); */
+          setIsLogoOpacityTarget(false);
+        }
       });
     };
 
     // Options for the intersection observer
     const options = {
       root: null, // relative to document viewport
-      rootMargin: '0px', // margin around root. Values are similar to css property. Unitless values not allowed
+      rootMargin: '0px', // margin around root
       threshold: 0.5, // visible amount of item shown in relation to root
     };
 
     // Create an observer
-    const observer = new IntersectionObserver(handleHeroInView, options);
-    // Target element to watch
-    const transNav = document.getElementById('transNav');
+    const logoOpacityTargetObserver = new IntersectionObserver(
+      handleLogoOpacityTargetInView,
+      options
+    );
 
-    if (transNav) {
-      observer.observe(transNav);
+    // Target the logoOpacityTarget element
+    const logoOpacityTarget = document.getElementById('logoOpacityTarget');
+
+    if (logoOpacityTarget) {
+      logoOpacityTargetObserver.observe(logoOpacityTarget);
     }
 
     // Clean up the observer on unmount
     return () => {
-      if (transNav) {
-        observer.unobserve(transNav);
+      if (logoOpacityTarget) {
+        logoOpacityTargetObserver.unobserve(logoOpacityTarget);
       }
     };
-  }, []);
-
-  const transparentNavBg = isHeroInView;
-  const shouldHideLogo = isHeroInView;
-
-  const navbarClassNames = [
-    styles.navbar,
-    hidden && styles.hidden,
-    transparentNavBg ? '' : styles.NavBg,
-  ]
-    .filter(Boolean)
-    .join(' ');
+  }, [pathname]);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
@@ -77,7 +74,7 @@ const Navbar = () => {
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
     const previous = scrollY.getPrevious();
-    if (latest > previous && latest > 100) {
+    if (latest > previous && latest > 5) {
       setHidden(true);
     } else {
       setHidden(false);
@@ -86,7 +83,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={navbarClassNames}
+      className={styles.navbar}
       variants={{
         visible: { y: 0 },
         hidden: { y: '-100%' },
@@ -96,28 +93,21 @@ const Navbar = () => {
     >
       <div className={styles.nav_center}>
         <section className={styles.nav__header}>
-          <div>
-            <Link href="/">
-              <Image
-                href={'/'}
-                src="/logos/erdkugel-logo-text.webp"
-                alt="logo"
-                priority={true}
-                width="0"
-                height="0"
-                sizes="100vw"
-                style={{
-                  width: '110px',
-                  height: 'auto',
-                  opacity: isHeroInView ? 0 : 1,
-                  transition: 'opacity 0.3s ease',
-                }}
-                className={`mt-0 sm:mt-1 ml-1 sm:ml-2 md:ml-4 ${
-                  shouldHideLogo ? styles.hiddenLogo : ''
-                }`}
-              />
-            </Link>
-          </div>
+          <Link href="/">
+            <Image
+              href={'/'}
+              src="/logos/erdkugel-logo-text.webp"
+              alt="logo"
+              priority={true}
+              width="130"
+              height="130"
+              sizes="100vw"
+              style={{
+                opacity: isLogoOpacityTarget ? 0 : 1,
+                transition: 'opacity 0.3s ease',
+              }}
+            />
+          </Link>
 
           <button className={styles.nav__toggle} onClick={toggleLinks}>
             <FaBars />

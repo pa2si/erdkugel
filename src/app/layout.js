@@ -1,16 +1,17 @@
 import './globals.css';
+import Header from './_components/Header/Header';
 import Footer from '@/app/_components/Footer/Footer';
 
 import { AppProvider } from '@/utils/context';
 
 export const metadata = {
   title: {
-    default: 'erdkugel lab',
-    template: '%s | erdkugel lab',
+    default: 'erdkugel',
+    template: '%s | erdkugel',
   },
   description: 'erdkugel is ',
   keywords: [
-    'sound post production, studio building, cinema sound, dialogue edit, sound mixing ',
+    'sound post production, studio constuction, studio design, cinema sound, dialogue edit, sound mixing, sound recording, voice recording, adr, dubbing, sound design',
   ],
   category: 'sound',
   robots: {
@@ -31,8 +32,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col h-screen bg-slate-50">
         <AppProvider>
+          <Header />
           {children}
           <Footer />
         </AppProvider>
