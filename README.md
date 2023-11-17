@@ -1,6 +1,6 @@
 new:
 
-- v 1.0.5 social icon in navbar adapted max-width from 1536 px on
+- v 1.0.6 rendered branchList list is now an article
 
 What's done:
 

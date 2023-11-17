@@ -47,7 +47,7 @@ const BranchesList = () => {
         } = branch;
 
         return (
-          <div key={id} className="">
+          <article key={id} className="">
             <motion.li
               className="bg-white h-full rounded-tr-xl shadow-lg overflow-hidden flex flex-col"
               variants={fadeInAnimationVariants}
@@ -85,7 +85,7 @@ const BranchesList = () => {
                 </button>
               </div>
             </motion.li>
-          </div>
+          </article>
         );
       })}
     </motion.ul>
