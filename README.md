@@ -1,6 +1,6 @@
 new:
 
-- v 1.3.0 New descriptions for branches
+- v 1.3.1 New descriptions for branches
 
 What's done:
 

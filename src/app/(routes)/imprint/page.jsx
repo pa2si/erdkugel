@@ -40,7 +40,7 @@ const page = () => {
 
           <h3 className="text-2xl sm:text-3xl">Kontakt</h3>
           <p className="text:lg sm:text-xl">
-            Telefon: +49 (0) 175 72 39 032
+            Telefon: +49 30 605 916 71
             <br />
             E-Mail: office@erdkugel.net
           </p>

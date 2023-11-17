@@ -191,7 +191,7 @@ const page = () => {
             04177 Leipzig
           </p>
           <p className="text-lg sm:text-xl">
-            Telefon: +49 (0) 175 723 90 32
+            Telefon: +49 30 605 916 71
             <br />
             E-Mail: office@erdkugel.net
           </p>

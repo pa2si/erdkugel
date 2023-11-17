@@ -4,7 +4,7 @@ export const branchesList = [
     title1: 'erdkugel lab',
     title2: 'studio construction and design ',
     src: '/images/cm-production-table-light.jpeg',
-    alt: 'example of an erdkugel lab designed production table ',
+    alt: 'example of an erdkugel lab designed production table',
     description1:
       'erdkugel lab plans, designs and builds sound post-production rooms and studios at the highest level and has implemented construction projects in Berlin, London, Leipzig, Stuttgart and Milan, among others. Features like Dolby Atmos and intelligent connectivity through the entire facilities are standard here.',
     description2:
