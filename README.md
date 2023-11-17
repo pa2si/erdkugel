@@ -1,8 +1,9 @@
 new:
 
-- v 1.6.2 email icon a bit smaller
+- v 1.6.3 h1 gets hidden start animation from x:-200 instead of x:-300.
+  also it got a new media screen max 400 and adapted font size for h1
 
-  What's done:
+What's done:
 
 - header in main laouyt w navbar that has logic to show logo in navbar only when target id is observed.
 - footer in main layout
