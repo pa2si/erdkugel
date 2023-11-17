@@ -1,7 +1,6 @@
 new:
 
-- v 1.6.3 h1 gets hidden start animation from x:-200 instead of x:-300.
-  also it got a new media screen max 400 and adapted font size for h1
+- v 1.6.4 bots settings now allowing SEO
 
 What's done:
 

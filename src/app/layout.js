@@ -16,11 +16,11 @@ export const metadata = {
   ],
   category: 'sound',
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
-      index: false,
+      index: true,
       follow: false,
       noimageindex: true,
       'max-video-preview': -1,
