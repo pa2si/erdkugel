@@ -1,6 +1,6 @@
 new:
 
-- v 1.0.2 adapted the animation delay of opacity and stacking
+- v 1.0.3 in imprint and privacy the link to e-echt24 is no a target=blank
 
 What's done:
 

@@ -435,9 +435,15 @@ const page = () => {
             &ndash; insbesondere gesetzliche Aufbewahrungsfristen &ndash;
             bleiben unber&uuml;hrt.
           </p>
-          <p className="text-lg sm:text-xl">
+          <p className="text:lg sm:text-xl">
             Quelle:{' '}
-            <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
+            <a
+              href="https://www.e-recht24.de"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              e-recht24.de
+            </a>
           </p>
         </address>
       </article>
