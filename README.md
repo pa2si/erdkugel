@@ -1,6 +1,6 @@
 new:
 
-- v 1.6.4 bots settings now allowing SEO
+- v 1.6.5 meta Description added
 
 What's done:
 
