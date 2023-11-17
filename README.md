@@ -1,6 +1,6 @@
 new:
 
-- v 1.2.1 Footer padding settings corrected for mobile version
+- v 1.3.0 New descriptions for branches
 
 What's done:
 
