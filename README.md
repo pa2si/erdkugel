@@ -1,6 +1,6 @@
 new:
 
-- v 1.0.4 Modal is now in main layout to make sure it appears on every route
+- v 1.0.5 social icon in navbar adapted max-width from 1536 px on
 
 What's done:
 
