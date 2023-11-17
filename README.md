@@ -1,6 +1,6 @@
 new:
 
-- v 1.5.1 logo in navbar corrected
+- v 1.6.0 linkedIn link in contact of erdkugel lab
 
   What's done:
 

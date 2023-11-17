@@ -72,6 +72,27 @@ const Modal = () => {
                 {selectedBranch.email}
               </a>
             </p>
+            <div className="flex justify-center mt-1">
+              {selectedBranch.linked ? (
+                <a
+                  href={selectedBranch.linkedUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div>
+                    <Image
+                      src={selectedBranch.linked}
+                      alt={selectedBranch.linkedAltText}
+                      priority={true}
+                      width="24"
+                      height="24"
+                      sizes="100vw"
+                      className="hover:scale-105 transition-all duration-200"
+                    />
+                  </div>
+                </a>
+              ) : null}
+            </div>
           </div>
 
           <button className={styles.close_modal_btn} onClick={closeModal}>

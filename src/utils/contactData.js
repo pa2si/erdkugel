@@ -10,6 +10,10 @@ const contacts = [
     street: 'Engertstraße 13',
     postal: '04177 Leipzig',
     email: 'office@erdkugel.net',
+    linked: '/logos/In-Blue-26.png',
+    linkedUrl:
+      'https://de.linkedin.com/company/erdkugel?trk=public_profile_topcard-current-company',
+    linkedAltText: 'linked in logo',
   },
   {
     id: 2,
