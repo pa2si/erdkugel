@@ -1,7 +1,7 @@
 export const companyData = [
   {
     id: 1,
-    company: 'erdkugel lab leizig',
+    company: 'erdkugel lab leipzig',
     street: 'Engertstraße 13',
     postal: '04177 Leipzig',
     link: '/contact',

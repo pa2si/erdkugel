@@ -87,7 +87,7 @@ const BranchesList = () => {
               </div>
               <div className="flex justify-center ">
                 <button
-                  className=" bg-zinc-700 tracking-widest flex-grow text-white text-lg p-2 border-xl transition-all duration-300 rounded border-transparent hover:bg-opacity-70 hover:text-erdkugel-yellow focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:ring-opacity-50"
+                  className=" bg-zinc-700 hover:bg-opacity-70 hover:text-erdkugel-yellow hover:text-xl tracking-widest flex-grow text-white text-lg p-2 border-xl transition-all duration-300 rounded border-transparent  focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:ring-opacity-50"
                   onClick={() => openModal(branch.id)}
                 >
                   {buttonText}

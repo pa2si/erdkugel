@@ -1,8 +1,7 @@
 new:
 
-- v 1.3.1 New descriptions for branches
-
-What's done:
+- v 1.4.0 UnderConstruction eliminated
+  What's done:
 
 - header in main laouyt w navbar that has logic to show logo in navbar only when target id is observed.
 - footer in main layout
