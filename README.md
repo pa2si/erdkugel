@@ -1,6 +1,6 @@
 new:
 
-- v 1.0.8 hover effect with click me text and blurry background over branchitems
+- v 1.2.0 the prev release of 1.0.8 should actually be v. 1.2.0. because the change there was to impement a blur effect and click on to open modal on the image of the branclist
 
 What's done:
 
