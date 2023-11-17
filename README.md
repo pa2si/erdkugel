@@ -1,6 +1,6 @@
 new:
 
-- v 1.0.6 rendered branchList list is now an article
+- v 1.0.7 TitleOne & TitleTwo are now html sections
 
 What's done:
 

@@ -35,10 +35,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="flex flex-col h-screen bg-slate-50">
         <AppProvider>
-          <Modal />
           <Header />
           {children}
           <Footer />
+          <Modal />
         </AppProvider>
       </body>
     </html>

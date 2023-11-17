@@ -19,7 +19,7 @@ const TitleHOne = ({ text }) => {
   }, [isInView, mainControls]);
 
   return (
-    <motion.div
+    <motion.section
       variants={{
         hidden: { opacity: 0, x: -300 },
         visible: { opacity: 1, x: 0 },
@@ -49,7 +49,7 @@ const TitleHOne = ({ text }) => {
         )}
         {text}
       </h1>
-    </motion.div>
+    </motion.section>
   );
 };
 export default TitleHOne;
