@@ -15,7 +15,7 @@ const BranchesList = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.2 * id,
+        delay: 0.4 * id,
       },
     }),
   };
@@ -26,7 +26,7 @@ const BranchesList = () => {
     <motion.ul
       className=" mt-1 w-full grid grid-cols-1 xl:grid-cols-2 gap-7 p-4  "
       transition={{
-        duration: 1,
+        duration: 4,
         type: 'spring',
         stiffness: 100,
         damping: 7,

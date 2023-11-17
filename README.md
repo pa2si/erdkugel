@@ -1,6 +1,6 @@
 new:
 
-- start of new branch w name landing-only
+- v 1.0.2 adapted the animation delay of opacity and stacking
 
 What's done:
 
