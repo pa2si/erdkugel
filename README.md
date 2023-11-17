@@ -1,6 +1,6 @@
 new:
 
-- v 1.0.3 in imprint and privacy the link to e-echt24 is no a target=blank
+- v 1.0.4 Modal is now in main layout to make sure it appears on every route
 
 What's done:
 

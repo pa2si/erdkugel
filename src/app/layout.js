@@ -3,6 +3,7 @@ import Header from './_components/Header/Header';
 import Footer from '@/app/_components/Footer/Footer';
 
 import { AppProvider } from '@/utils/context';
+import Modal from './_components/Homepage/_components/Branches/_components/Modal/Modal';
 
 export const metadata = {
   title: {
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="flex flex-col h-screen bg-slate-50">
         <AppProvider>
+          <Modal />
           <Header />
           {children}
           <Footer />
