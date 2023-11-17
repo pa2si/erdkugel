@@ -1,6 +1,6 @@
 new:
 
-- v 1.0.7 TitleOne & TitleTwo are now html sections
+- v 1.0.8 hover effect with click me text and blurry background over branchitems
 
 What's done:
 

@@ -47,7 +47,10 @@ const BranchesList = () => {
         } = branch;
 
         return (
-          <article key={id} className="">
+          <article
+            key={id}
+            className="bg-white h-full rounded-tr-xl shadow-lg overflow-hidden flex flex-col"
+          >
             <motion.li
               className="bg-white h-full rounded-tr-xl shadow-lg overflow-hidden flex flex-col"
               variants={fadeInAnimationVariants}
@@ -57,8 +60,9 @@ const BranchesList = () => {
               custom={id}
             >
               <div
-                className="relative w-full h-56 md:h-64 lg:h-80 xl:h-96 pt-2 px-2 mb-2 transition-all ease-in-out duration-300 hover:shadow-lg hover:scale-105"
+                className="relative w-full h-56 md:h-64 lg:h-80 xl:h-96 pt-2 px-2 mb-2 transition-all ease-in-out duration-300 hover:shadow-lg hover:scale-105 group cursor-pointer"
                 id={idTarget}
+                onClick={() => openModal(id)}
               >
                 <Image
                   src={src}
@@ -67,8 +71,13 @@ const BranchesList = () => {
                   height="0"
                   sizes="100vw"
                   priority={true}
-                  className="rounded-tr-xl object-cover w-full h-full"
+                  className="rounded-tr-xl object-cover w-full h-full transition duration-300 ease-linear group-hover:blur"
                 />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                  <span className="text-white text-xl">
+                    Click for contact:{' '}
+                  </span>
+                </div>
               </div>
               <div className="p-4 flex-grow">
                 <h3 className="text-black text-3xl font-semibold ">{title1}</h3>

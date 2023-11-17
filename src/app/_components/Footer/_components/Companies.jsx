@@ -2,7 +2,6 @@
 
 import { useGlobalContext } from '@/utils/context';
 import { companyData } from '../data';
-import Link from 'next/link';
 
 const Companies = () => {
   const { openModal } = useGlobalContext();
