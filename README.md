@@ -1,6 +1,6 @@
 new:
 
-- v 1.6.0 linkedIn link in contact of erdkugel lab
+- v 1.6.1 HTwo Logo animaiton changed from hidden: x-300 to x-200
 
   What's done:
 
