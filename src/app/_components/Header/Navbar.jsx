@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { links, social } from './data';
+import { links, social, email } from './data';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './Navbar.module.css';
@@ -98,7 +98,33 @@ const Navbar = () => {
               <Image
                 href={'/'}
                 src="/logos/erdkugel-logo-text.webp"
-                alt="logo"
+                alt="erdkugel logo text"
+                priority={true}
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="h-full w-full object-cover"
+                style={{
+                  opacity: isLogoOpacityTarget ? 0 : 1,
+                  transition: 'opacity 0.3s ease',
+                }}
+              />
+            </Link>
+          </div>
+          <div
+            className="ml-1 my-auto"
+            style={{
+              height: '2rem',
+              width: 'auto',
+              paddingBottom: '0.2rem',
+              paddingLeft: '0.3rem',
+            }}
+          >
+            <Link href="/">
+              <Image
+                href={'/'}
+                src="/logos/erdkugel-logo-moon.webp"
+                alt="erdkugel logo moon"
                 priority={true}
                 width="0"
                 height="0"
@@ -139,6 +165,24 @@ const Navbar = () => {
                   >
                     {text}
                   </Link>
+                </li>
+              );
+            })}
+          </ul>
+          <ul>
+            {email.map((item) => {
+              const { id, email, icon } = item;
+              return (
+                <li
+                  key={id}
+                  className={`${styles.mailIcon} text-white mt-0 pb-1 hover:scale-110 transition-all duration-300`}
+                >
+                  <a
+                    href={`mailto:${email}`}
+                    className="hover:text-erdkugel-yellow "
+                  >
+                    {icon}
+                  </a>
                 </li>
               );
             })}

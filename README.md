@@ -1,6 +1,7 @@
 new:
 
-- v 1.4.0 UnderConstruction eliminated
+- v 1.5.0 logo in navbar now w moon
+
   What's done:
 
 - header in main laouyt w navbar that has logic to show logo in navbar only when target id is observed.

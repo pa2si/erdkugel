@@ -89,7 +89,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 0.4rem 0.2rem 0.5rem;
+    padding: 0.4rem 0.4rem 0.2rem 0.5rem;
   }
 
   .links__container {
@@ -129,7 +129,13 @@
   }
   .social__icons {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .mailIcon {
+    font-size: 1.7rem;
   }
 
   .iconWrapper {
