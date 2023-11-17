@@ -93,38 +93,12 @@ const Navbar = () => {
     >
       <div className={styles.nav_center}>
         <section className={styles.nav__header}>
-          <div className="ml-1" style={{ height: 'auto', width: '8rem' }}>
+          <div style={{ height: 'auto', width: '8.5rem' }}>
             <Link href="/">
               <Image
                 href={'/'}
-                src="/logos/erdkugel-logo-text.webp"
+                src="/logos/erdkugel-logo-w-text-side-by-side.webp"
                 alt="erdkugel logo text"
-                priority={true}
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="h-full w-full object-cover"
-                style={{
-                  opacity: isLogoOpacityTarget ? 0 : 1,
-                  transition: 'opacity 0.3s ease',
-                }}
-              />
-            </Link>
-          </div>
-          <div
-            className="ml-1 my-auto"
-            style={{
-              height: '2rem',
-              width: 'auto',
-              paddingBottom: '0.2rem',
-              paddingLeft: '0.3rem',
-            }}
-          >
-            <Link href="/">
-              <Image
-                href={'/'}
-                src="/logos/erdkugel-logo-moon.webp"
-                alt="erdkugel logo moon"
                 priority={true}
                 width="0"
                 height="0"
@@ -160,7 +134,7 @@ const Navbar = () => {
                 <li key={id}>
                   <Link
                     className={pathname === url ? '!text-yellow-300 ' : ''}
-                    href={url}
+                    href={`/${url}`}
                     onClick={toggleLinks}
                   >
                     {text}

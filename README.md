@@ -1,6 +1,6 @@
 new:
 
-- v 1.5.0 logo in navbar now w moon
+- v 1.5.1 logo in navbar corrected
 
   What's done:
 
