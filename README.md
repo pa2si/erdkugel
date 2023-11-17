@@ -1,6 +1,6 @@
 new:
 
-- v 1.6.1 HTwo Logo animaiton changed from hidden: x-300 to x-200
+- v 1.6.2 email icon a bit smaller
 
   What's done:
 

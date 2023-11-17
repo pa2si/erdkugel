@@ -135,12 +135,13 @@
   }
 
   .mailIcon {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .iconWrapper {
     display: inline-block;
     transition: var(--transition);
+    padding-right: 0.05rem;
   }
 
   .iconWrapper:hover {
