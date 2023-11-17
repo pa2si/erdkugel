@@ -14,9 +14,9 @@ const Companies = () => {
           <section
             key={id}
             onClick={() => openModal(id)}
-            className="pt-2 sm:pt-0 leading-4 md:leading-5 lg:leading-6 pb-1 sm:pb-0  border-b sm:border-b-0 border-white"
+            className="pt-3 sm:pt-0 pb-3 sm:pb-0 leading-5 md:leading-5 lg:leading-6  border-b sm:border-b-0 border-white"
           >
-            <p className="pb-1 sm:pb-2 md:pb-0 transition-colors duration-300 ease-in-out hover:text-erdkugel-yellow hover:cursor-pointer">
+            <p className="pb-1 md:pb-0 transition-colors duration-300 ease-in-out hover:text-erdkugel-yellow hover:cursor-pointer">
               {company}
             </p>
             <p className="mb-1 md:pb-">{`${street}, ${postal}`}</p>

@@ -10,16 +10,16 @@ const Footer = () => {
       <Companies />
 
       <section>
-        <section className="flex justify-center items-center pt-2 pb-1 sm:pt-0 sm:pb-0 border-b sm:border-b-0 border-white">
-          <p className="pb-1 sm:pb-0 md:pb-0">
+        <section className=" pt-4 sm:pt-0 pb-3 sm:pb-0 flex justify-center items-center border-b sm:border-b-0 border-white">
+          <p className="pb-1 sm:pb-1 md:pb-0">
             <a href={`mailto:${email}`} className="hover:text-erdkugel-yellow">
               {email}
             </a>
           </p>
         </section>
 
-        <section className="flex justify-center items-center pt-2 sm:pt-0 leading-4 lg:leading-5 ">
-          <p className="pr-3 pb-0 text-white transition-colors duration-300 ease-in-out hover:text-erdkugel-yellow">
+        <section className="pt-4 sm:pt-0 pb-2 sm:pb-0 flex justify-center items-center leading-4 lg:leading-5 ">
+          <p className="pr-3 pb-0  text-white transition-colors duration-300 ease-in-out hover:text-erdkugel-yellow">
             <Link href={'/imprint'}>{imprint}</Link>
           </p>
           <p>|</p>
