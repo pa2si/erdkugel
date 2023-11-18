@@ -11,9 +11,9 @@ export const metadata = {
     template: '%s | erdkugel',
   },
   description:
-    '* Sound Post Production * Dialogue Edit * Sound Mixing * ADR * Cinema Sound * Studio Design * Studio Construction *',
+    '* Sound Post Production * Dialogue Editing * Sound Mixing * ADR * Cinema Sound * Studio Design * Studio Construction *',
   keywords: [
-    'erdkugel gmbh, sound post production, studio constuction, studio design, cinema sound, dialogue edit, sound mixing, sound recording, voice recording, adr, dubbing, sound design',
+    'erdkugel gmbh, erdkugel lab, erdkugel studio berlin, sound post production, studio construction,',
   ],
   category: 'sound',
   robots: {
