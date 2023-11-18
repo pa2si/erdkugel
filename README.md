@@ -1,6 +1,6 @@
 new:
 
-- v 1.6.7 meta keywords adapted
+- v 1.6.8 meta keywords adapted
 
 What's done:
 

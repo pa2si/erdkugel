@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'imprint',
-  description: ' find here the privacy policy for erdkugel lab website',
+  description: ' find here the privacy policy for erdkugel gmbh website',
 };
 
 import TitleHOne from '@/utils/TitleHOne';

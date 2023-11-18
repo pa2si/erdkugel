@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'privacy policy',
-  description: ' find here the privacy policy for erdkugel lab website',
+  description: ' find here the privacy policy for erdkugel gmbh website',
 };
 
 import styles from './page.module.css';
