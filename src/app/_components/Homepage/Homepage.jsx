@@ -3,7 +3,7 @@ import Branches from './_components/Branches/Branches';
 const Homepage = () => {
   return (
     <main className="flex-grow">
-      <h1 className="sr-only">Welcome to Erdkugel</h1>
+      <h1 className="sr-only">Welcome to the website of erdkugel gmbh</h1>
       <Branches />
     </main>
   );

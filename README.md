@@ -1,6 +1,6 @@
 new:
 
-- v 1.6.5 meta Description added
+- v 1.6.6 meta Description added
 
 What's done:
 
