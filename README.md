@@ -1,6 +1,6 @@
 new:
 
-- v 1.7.0 Menu list studios and lab swapped
+- v 1.7.1 LinkedIn Button in "lab contact" Modal only visible for Desktop version.
 
 What's done:
 

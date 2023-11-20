@@ -72,7 +72,7 @@ const Modal = () => {
                 {selectedBranch.email}
               </a>
             </p>
-            <div className="flex justify-center mt-1">
+            <div className="flex justify-center mt-1 md:hidden">
               {selectedBranch.linked ? (
                 <a
                   href={selectedBranch.linkedUrl}
