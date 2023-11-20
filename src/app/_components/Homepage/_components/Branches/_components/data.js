@@ -1,20 +1,6 @@
 export const branchesList = [
   {
     id: 1,
-    title1: 'erdkugel lab',
-    title2: 'studio construction and design ',
-    src: '/images/cm-production-table-light.jpeg',
-    alt: 'example of an erdkugel lab designed production table',
-    description1:
-      'erdkugel lab plans, designs and builds sound post-production rooms and studios at the highest level and has implemented construction projects in Berlin, London, Leipzig, Stuttgart and Meran, among others. Features like Dolby Atmos and intelligent connectivity through the entire facilities are standard here.',
-    description2:
-      'A particular focus is the design and construction of production and mixing desks. Great importance is placed on the individual needs of the customer and is implemented professionally, especially in terms of flexibility and ergonomics. In particular, alternating working while sitting and standing is an absolutely unique selling point for tables of this size and complexity.',
-    bgColor: 'bg-green-400',
-    buttonText: 'contact',
-    idTarget: 'lab',
-  },
-  {
-    id: 2,
     title1: 'erdkugel studios berlin',
     title2: 'full service sound post production',
     src: '/images/erdkugel-studios.jpeg',
@@ -26,5 +12,19 @@ export const branchesList = [
     bgColor: 'bg-blue-400',
     buttonText: 'contact',
     idTarget: 'studios',
+  },
+  {
+    id: 2,
+    title1: 'erdkugel lab',
+    title2: 'studio construction and design ',
+    src: '/images/cm-production-table-light.jpeg',
+    alt: 'example of an erdkugel lab designed production table',
+    description1:
+      'erdkugel lab plans, designs and builds sound post-production rooms and studios at the highest level and has implemented construction projects in Berlin, London, Leipzig, Stuttgart and Meran, among others. Features like Dolby Atmos and intelligent connectivity through the entire facilities are standard here.',
+    description2:
+      'A particular focus is the design and construction of production and mixing desks. Great importance is placed on the individual needs of the customer and is implemented professionally, especially in terms of flexibility and ergonomics. In particular, alternating working while sitting and standing is an absolutely unique selling point for tables of this size and complexity.',
+    bgColor: 'bg-green-400',
+    buttonText: 'contact',
+    idTarget: 'lab',
   },
 ];
