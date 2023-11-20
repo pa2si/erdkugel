@@ -1,6 +1,6 @@
 new:
 
-- v 1.6.8 meta keywords adapted
+- v 1.7.0 Menu list studios and lab swapped
 
 What's done:
 
