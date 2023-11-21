@@ -1,6 +1,6 @@
 new:
 
-- v 1.8.0 LinkedIn Button in "lab contact" Modal only visible for Desktop version.
+- v 1.8.1 main layout description updated
 
 What's done:
 
@@ -11,14 +11,6 @@ What's done:
   - modal to show contact by clicking on contact or componies in footer
 - imprint route
 - privacy route
-
-seperate the Refs for two cases. one the background div for the blur and the other for the y and x effect
-
-- make hidden und visible effect for the y moving of sectionTwo (not due to scrolling)
-- find reason why there is so much space after section two
-- next section shall be dialogue text as a teaser
-- section afterwords shall be the studio and lab presentaion
-- click on plugin icons to open info
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

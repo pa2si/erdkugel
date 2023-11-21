@@ -11,7 +11,7 @@ export const metadata = {
     template: '%s | erdkugel',
   },
   description:
-    '* Sound Post Production * Dialogue Editing * Sound Mixing * ADR * Cinema Sound * Studio Design * Studio Construction *',
+    "Erdkugel Lab and Erdkugel Studios Berlin: Experts in sound post-production, room and studio design, offering customized, ergonomic solutions and full-service sound editing and supervision in Berlin's Kreuzberg district.",
   keywords: [
     'erdkugel gmbh, erdkugel lab, erdkugel studio berlin, sound post production, studio construction,',
   ],
