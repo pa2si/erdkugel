@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { branchesList } from './data';
 import { useGlobalContext } from '@/utils/context';
+import Carousel from './Carousel';
 
 const BranchesList = () => {
   const fadeInAnimationVariants = {
@@ -59,27 +60,10 @@ const BranchesList = () => {
               viewport={{ once: true }}
               custom={id}
             >
-              <div
-                className="relative w-full h-56 md:h-64 lg:h-80 xl:h-96 pt-2 px-2 mb-2 transition-all ease-in-out duration-300 hover:shadow-lg hover:scale-105 group cursor-pointer"
-                id={idTarget}
-                onClick={() => openModal(id)}
-              >
-                <Image
-                  src={src}
-                  alt={alt}
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  priority={true}
-                  className="rounded-tr-xl object-cover w-full h-full transition duration-300 ease-linear group-hover:blur"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                  <span className="text-white text-xl">
-                    click for contact:{' '}
-                  </span>
-                </div>
+              <div className="relative w-full h-56 md:h-64 lg:h-80 xl:h-96 pt-2 px-2 mb-2 transition-all ease-in-out duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
+                <Carousel />
               </div>
-              <div className="p-4 flex-grow">
+              <div className="mt-8 p-4 flex-grow">
                 <h3 className="text-black text-3xl font-semibold ">{title1}</h3>
                 <h4 className="text-2xl font-semibold mb-3 ">{title2}</h4>
                 <p className="text-xl">{description1}</p>

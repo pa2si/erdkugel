@@ -28,3 +28,30 @@ export const branchesList = [
     idTarget: 'lab',
   },
 ];
+
+export const carouselImages = [
+  {
+    id: 1,
+    image: '/images/carousel-test/cm-production-table-light.jpeg',
+    alt: 'alt1',
+    title: 'title lorem ipsum 1',
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,',
+  },
+  {
+    id: 2,
+    image: '/images/carousel-test/cm-production-table-light-2.jpeg',
+    alt: 'alt2',
+    title: 'title lorem ipsum 2',
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,',
+  },
+  {
+    id: 3,
+    image: '/images/carousel-test/cm-production-table-light-3.jpeg',
+    alt: 'alt3',
+    title: 'title lorem ipsum 3',
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,',
+  },
+];
