@@ -1,6 +1,6 @@
 new:
 
-- v 1.8.2 smooth scrolling activated
+- v 1.8.3 contact button only appears for Desktop Version
 
 What's done:
 
