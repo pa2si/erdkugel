@@ -1,6 +1,8 @@
 new:
 
-- v 1.8.3 contact button only appears for Desktop Version
+v 1.8.4 beta
+
+- the image of the branchlist is replaced by a carousel which has a hover effect with infos appearing.
 
 What's done:
 
