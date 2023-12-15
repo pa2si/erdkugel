@@ -1,10 +1,10 @@
 new:
 
-v 1.8.4
+v 1.8.5
 
 What's done:
 
-h1 text of homepage changed
+robots and sitemap now as js file
 
 - header in main laouyt w navbar that has logic to show logo in navbar only when target id is observed.
 - footer in main layout
